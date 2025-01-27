@@ -1,0 +1,31 @@
+{
+  "os": "Linux-6.8.0-49-generic-x86_64-with-glibc2.39",
+  "python": "CPython 3.12.3",
+  "startedAt": "2025-01-23T20:23:21.326983Z",
+  "program": "/home/rohanb/DiffusionToy/toy_exp.ipynb",
+  "codePath": "toy_exp.ipynb",
+  "git": {
+    "remote": "git@github.com:rohbws/DiffusionCoTrainingToy.git",
+    "commit": "48022774b2bd3fb6517632d3402cbe099aeb95a1"
+  },
+  "email": "rohanb27@mit.edu",
+  "root": "/home/rohanb/DiffusionToy",
+  "host": "rohanb-Precision-5820-Tower",
+  "executable": "/home/rohanb/DiffusionToy/diffusion_toy/bin/python",
+  "codePathLocal": "toy_exp.ipynb",
+  "cpu_count": 4,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "502390513664",
+      "used": "138558599168"
+    }
+  },
+  "memory": {
+    "total": "67100569600"
+  },
+  "cpu": {
+    "count": 4,
+    "countLogical": 8
+  }
+}

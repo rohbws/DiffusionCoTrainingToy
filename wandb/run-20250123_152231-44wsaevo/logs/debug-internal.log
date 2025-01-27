@@ -1,0 +1,6 @@
+{"time":"2025-01-23T15:22:31.498903197-05:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/home/rohanb/DiffusionToy/wandb/run-20250123_152231-44wsaevo/logs/debug-core.log"}
+{"time":"2025-01-23T15:22:31.607453786-05:00","level":"INFO","msg":"created new stream","id":"44wsaevo"}
+{"time":"2025-01-23T15:22:31.607485538-05:00","level":"INFO","msg":"stream: started","id":"44wsaevo"}
+{"time":"2025-01-23T15:22:31.60755567-05:00","level":"INFO","msg":"sender: started","stream_id":"44wsaevo"}
+{"time":"2025-01-23T15:22:31.6075745-05:00","level":"INFO","msg":"handler: started","stream_id":"44wsaevo"}
+{"time":"2025-01-23T15:22:31.607568692-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"44wsaevo"}

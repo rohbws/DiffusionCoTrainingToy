@@ -1,0 +1,72 @@
+Input shape: torch.Size([5])
+Noisy image shape: torch.Size([2])
+Noisy image: tensor([-0.9638,  1.8913])
+Noisy image shape: torch.Size([2])
+Noisy image: tensor([-0.6609,  1.9509])
+Launching training on CPU.
+Epoch 0:   0%|          | 0/316 [00:00<?, ?it/s]/tmp/ipykernel_47048/2673571491.py:64: UserWarning: Using a target size (torch.Size([32, 2])) that is different to the input size (torch.Size([2])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  loss = F.mse_loss(noise_pred, noise)
+Epoch 0: 100%|█████████▉| 315/316 [00:01<00:00, 274.52it/s, loss=1.24, lr=6.3e-5, step=314]  /tmp/ipykernel_47048/2673571491.py:64: UserWarning: Using a target size (torch.Size([20, 2])) that is different to the input size (torch.Size([2])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  loss = F.mse_loss(noise_pred, noise)
+Epoch 0: 100%|██████████| 316/316 [00:01<00:00, 260.50it/s, loss=0.903, lr=6.32e-5, step=315]
+Epoch 1: 100%|██████████| 316/316 [00:01<00:00, 194.85it/s, loss=1.12, lr=0.0001, step=631]
+Epoch 2: 100%|██████████| 316/316 [00:01<00:00, 282.63it/s, loss=2.02, lr=9.98e-5, step=947] 
+Epoch 3: 100%|██████████| 316/316 [00:01<00:00, 200.38it/s, loss=1.13, lr=9.94e-5, step=1263]
+Epoch 4: 100%|██████████| 316/316 [00:01<00:00, 257.61it/s, loss=1.05, lr=9.88e-5, step=1579] 
+Epoch 5: 100%|██████████| 316/316 [00:01<00:00, 198.45it/s, loss=1.25, lr=9.8e-5, step=1895]
+Epoch 6: 100%|██████████| 316/316 [00:01<00:00, 265.16it/s, loss=0.988, lr=9.69e-5, step=2211]
+Epoch 7: 100%|██████████| 316/316 [00:01<00:00, 198.69it/s, loss=1.08, lr=9.57e-5, step=2527]
+Epoch 8: 100%|██████████| 316/316 [00:01<00:00, 248.73it/s, loss=0.867, lr=9.43e-5, step=2843]
+Epoch 9: 100%|██████████| 316/316 [00:01<00:00, 195.56it/s, loss=1.27, lr=9.27e-5, step=3159]
+Epoch 10: 100%|██████████| 316/316 [00:01<00:00, 263.90it/s, loss=0.938, lr=9.1e-5, step=3475] 
+Epoch 11: 100%|██████████| 316/316 [00:01<00:00, 194.02it/s, loss=0.998, lr=8.9e-5, step=3791]
+Epoch 12: 100%|██████████| 316/316 [00:01<00:00, 255.91it/s, loss=0.714, lr=8.69e-5, step=4107]
+Epoch 13: 100%|██████████| 316/316 [00:01<00:00, 199.47it/s, loss=1.1, lr=8.46e-5, step=4423]
+Epoch 14: 100%|██████████| 316/316 [00:01<00:00, 243.74it/s, loss=1.36, lr=8.22e-5, step=4739] 
+Epoch 15: 100%|██████████| 316/316 [00:01<00:00, 195.63it/s, loss=0.662, lr=7.97e-5, step=5055]
+Epoch 16: 100%|██████████| 316/316 [00:01<00:00, 263.79it/s, loss=1.18, lr=7.7e-5, step=5371]  
+Epoch 17: 100%|██████████| 316/316 [00:01<00:00, 195.45it/s, loss=1.53, lr=7.42e-5, step=5687]
+Epoch 18: 100%|██████████| 316/316 [00:01<00:00, 276.31it/s, loss=1.13, lr=7.13e-5, step=6003] 
+Epoch 19: 100%|██████████| 316/316 [00:01<00:00, 189.96it/s, loss=0.703, lr=6.83e-5, step=6319]
+Epoch 20: 100%|██████████| 316/316 [00:01<00:00, 251.38it/s, loss=1.03, lr=6.53e-5, step=6635] 
+Epoch 21: 100%|██████████| 316/316 [00:01<00:00, 193.57it/s, loss=1.07, lr=6.22e-5, step=6951]
+Epoch 22: 100%|██████████| 316/316 [00:01<00:00, 266.23it/s, loss=0.515, lr=5.9e-5, step=7267] 
+Epoch 23: 100%|██████████| 316/316 [00:01<00:00, 181.81it/s, loss=1.13, lr=5.58e-5, step=7583]
+Epoch 24: 100%|██████████| 316/316 [00:01<00:00, 260.80it/s, loss=1.44, lr=5.26e-5, step=7899] 
+Epoch 25: 100%|██████████| 316/316 [00:01<00:00, 195.74it/s, loss=1.58, lr=4.93e-5, step=8215]
+Epoch 26: 100%|██████████| 316/316 [00:01<00:00, 242.80it/s, loss=0.953, lr=4.61e-5, step=8531]
+Epoch 27: 100%|██████████| 316/316 [00:01<00:00, 190.44it/s, loss=0.788, lr=4.29e-5, step=8847]
+Epoch 28: 100%|██████████| 316/316 [00:01<00:00, 255.46it/s, loss=0.74, lr=3.97e-5, step=9163] 
+  0%|          | 0/316 [00:00<?, ?it/s]                                                       self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=1.26, lr=3.65e-5, step=9479] 
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 29: 100%|██████████| 316/316 [00:01<00:00, 191.82it/s, loss=1.26, lr=3.65e-5, step=9479]
+Epoch 30: 100%|██████████| 316/316 [00:01<00:00, 245.49it/s, loss=0.771, lr=3.34e-5, step=9795]
+Epoch 31: 100%|██████████| 316/316 [00:01<00:00, 200.37it/s, loss=1.08, lr=3.04e-5, step=10111]
+Epoch 32: 100%|██████████| 316/316 [00:01<00:00, 255.42it/s, loss=0.574, lr=2.75e-5, step=10427]
+Epoch 33: 100%|██████████| 316/316 [00:01<00:00, 189.10it/s, loss=1.09, lr=2.46e-5, step=10743]
+Epoch 34: 100%|██████████| 316/316 [00:01<00:00, 255.65it/s, loss=0.996, lr=2.19e-5, step=11059]
+Epoch 35: 100%|██████████| 316/316 [00:01<00:00, 196.22it/s, loss=0.995, lr=1.92e-5, step=11375]
+Epoch 36: 100%|██████████| 316/316 [00:01<00:00, 259.85it/s, loss=0.943, lr=1.68e-5, step=11691]
+Epoch 37: 100%|██████████| 316/316 [00:01<00:00, 197.70it/s, loss=1.21, lr=1.44e-5, step=12007]
+Epoch 38: 100%|██████████| 316/316 [00:01<00:00, 252.89it/s, loss=0.893, lr=1.22e-5, step=12323]
+Epoch 39: 100%|██████████| 316/316 [00:01<00:00, 197.14it/s, loss=0.836, lr=1.02e-5, step=12639]
+Epoch 40: 100%|██████████| 316/316 [00:01<00:00, 252.95it/s, loss=0.918, lr=8.29e-6, step=12955]
+Epoch 41: 100%|██████████| 316/316 [00:01<00:00, 191.60it/s, loss=1.01, lr=6.59e-6, step=13271]
+Epoch 42: 100%|██████████| 316/316 [00:01<00:00, 254.04it/s, loss=0.718, lr=5.07e-6, step=13587]
+Epoch 43: 100%|██████████| 316/316 [00:01<00:00, 192.46it/s, loss=0.833, lr=3.74e-6, step=13903]
+Epoch 44: 100%|██████████| 316/316 [00:01<00:00, 254.36it/s, loss=0.963, lr=2.61e-6, step=14219]
+Epoch 45: 100%|██████████| 316/316 [00:01<00:00, 189.45it/s, loss=0.927, lr=1.67e-6, step=14535]
+Epoch 46: 100%|██████████| 316/316 [00:01<00:00, 252.39it/s, loss=0.756, lr=9.44e-7, step=14851]
+Epoch 47: 100%|██████████| 316/316 [00:01<00:00, 188.71it/s, loss=0.695, lr=4.2e-7, step=15167]
+Epoch 48: 100%|██████████| 316/316 [00:01<00:00, 266.36it/s, loss=0.784, lr=1.05e-7, step=15483]
+  0%|          | 0/316 [00:00<?, ?it/s]                                                         self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=0.898, lr=0, step=15799]       
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 49: 100%|██████████| 316/316 [00:01<00:00, 195.47it/s, loss=0.898, lr=0, step=15799]
+Number of weights: 4674
+Number of weights: 4674
