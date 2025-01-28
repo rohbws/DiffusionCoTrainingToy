@@ -1,0 +1,964 @@
+Launching training on 2 GPUs.
+Fatal Python error: Fatal Python error: Segmentation fault
+
+Segmentation faultThread 0x
+
+00007f7d5c6b8640Thread 0x (most recent call first):
+00007f7d5ceb9640  File  (most recent call first):
+"  File /usr/lib/python3.10/threading.py""/usr/lib/python3.10/threading.py, line "324, line  in 324wait in
+wait  File
+"  File /usr/lib/python3.10/threading.py""/usr/lib/python3.10/threading.py", line 607, line  in 607wait in
+wait  File
+"  File /home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/tqdm/_monitor.py""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/tqdm/_monitor.py", line 60, line  in 60run in
+run  File
+"  File /usr/lib/python3.10/threading.py""/usr/lib/python3.10/threading.py, line "1016, line  in 1016_bootstrap_inner in
+_bootstrap_inner  File
+"  File /usr/lib/python3.10/threading.py""/usr/lib/python3.10/threading.py, line "973 in , line _bootstrap973
+ in
+_bootstrapCurrent thread 0x
+00007f7e7a203480
+ (most recent call first):
+Current thread 0x  File 00007f7e7a203480" (most recent call first):
+/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/utils/data/sampler.py  File "", line /home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/utils/data/sampler.py197" in , line __iter__197
+ in   File __iter__"
+/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/utils/data/sampler.py  File "", line /home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/utils/data/sampler.py347" in , line __iter__347
+ in   File __iter__"
+/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/accelerate/data_loader.py  File "", line /home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/accelerate/data_loader.py218" in , line _iter_with_no_split218
+ in   File _iter_with_no_split"
+/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/utils/data/dataloader.py  File "", line /home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/utils/data/dataloader.py691" in , line _next_index691
+ in   File _next_index"
+/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/utils/data/dataloader.py  File "", line /home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/utils/data/dataloader.py756" in , line _next_data756
+ in _next_data  File
+"  File /home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/utils/data/dataloader.py""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/utils/data/dataloader.py, line "701, line  in 701__next__ in
+__next__  File
+"  File /home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/accelerate/data_loader.py""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/accelerate/data_loader.py, line "563, line  in 563__iter__ in
+__iter__  File
+"  File /tmp/ipykernel_6709/3220645018.py""/tmp/ipykernel_6709/3220645018.py, line "47, line  in 47train_loop in
+train_loop  File
+"  File /home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py, line "355, line  in 355wrapper in
+wrapper  File
+"  File /home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py, line "611, line  in 611_wrap in
+_wrap  File
+"  File /home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/multiprocessing/spawn.py""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/multiprocessing/spawn.py, line "90, line  in 90_wrap in
+_wrap  File
+"  File /usr/lib/python3.10/multiprocessing/process.py""/usr/lib/python3.10/multiprocessing/process.py, line "108 in , line run108
+ in   File run"
+/usr/lib/python3.10/multiprocessing/process.py  File "", line /usr/lib/python3.10/multiprocessing/process.py314" in , line _bootstrap314
+ in   File _bootstrap"
+/usr/lib/python3.10/multiprocessing/popen_fork.py  File "", line /usr/lib/python3.10/multiprocessing/popen_fork.py71" in , line _launch71
+ in   File _launch"
+/usr/lib/python3.10/multiprocessing/popen_fork.py  File "", line /usr/lib/python3.10/multiprocessing/popen_fork.py19" in , line __init__19
+ in   File __init__"
+/usr/lib/python3.10/multiprocessing/context.py  File "", line /usr/lib/python3.10/multiprocessing/context.py281" in , line _Popen281
+ in   File _Popen"
+/usr/lib/python3.10/multiprocessing/process.py  File "", line /usr/lib/python3.10/multiprocessing/process.py121" in , line start121
+ in   File start"
+/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/multiprocessing/spawn.py  File "", line /home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/multiprocessing/spawn.py263" in , line start_process263
+ in start_process  File
+"/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/multiprocessing/spawn.py"  File ", line /home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/multiprocessing/spawn.py268" in start_processes, line
+268  File  in "start_processes/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py
+"  File , line "658/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py in "_start, line
+658  File  in "_start/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py
+"  File , line "485/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py in "start, line
+485 in start
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/__init__.py  File "", line /home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/__init__.py229" in , line start_processes229
+ in   File start_processes"
+/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/local_elastic_agent.py  File "", line /home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/local_elastic_agent.py343" in _start_workers, line
+343 in _start_workers
+  File "  File /home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py, line "137 in , line wrapper137
+ in wrapper
+  File   File ""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py"", line , line 671671 in  in _initialize_workers_initialize_workers
+
+  File   File ""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py"", line , line 137137 in  in wrapperwrapper
+
+  File   File ""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py"", line , line 849849 in  in _invoke_run_invoke_run
+
+  File   File ""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py"", line , line 696696 in  in runrun
+
+  File   File ""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py"", line , line 137137 in  in wrapperwrapper
+
+  File   File ""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/launcher/api.py/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/launcher/api.py"", line , line 260260 in  in launch_agentlaunch_agent
+
+  File   File ""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/launcher/api.py/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/launcher/api.py"", line , line 138138 in  in __call____call__
+
+  File   File ""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/accelerate/launchers.py/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/accelerate/launchers.py"", line , line 244244 in  in notebook_launchernotebook_launcher
+
+  File "  File /tmp/ipykernel_6709/1485797872.py""/tmp/ipykernel_6709/1485797872.py, line "3, line  in 3<module> in
+<module>
+  File "  File /home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/interactiveshell.py""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3577, line  in 3577 in run_code
+run_code
+  File "  File /home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/interactiveshell.py""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3517, line  in 3517run_ast_nodes in
+run_ast_nodes
+  File   File ""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/interactiveshell.py/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/interactiveshell.py"", line , line 33343334 in  in run_cell_asyncrun_cell_async
+
+  File   File ""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/async_helpers.py/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/async_helpers.py"", line , line 128128 in  in _pseudo_sync_runner_pseudo_sync_runner
+
+  File   File ""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/interactiveshell.py/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/interactiveshell.py"", line , line 31303130 in  in _run_cell_run_cell
+
+  File   File ""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/interactiveshell.py/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/interactiveshell.py"", line , line 30753075 in  in run_cellrun_cell
+
+  File   File ""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/ipykernel/zmqshell.py/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/ipykernel/zmqshell.py"", line , line 549549 in  in run_cellrun_cell
+
+  File   File ""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/ipykernel/ipkernel.py/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/ipykernel/ipkernel.py"", line , line 449449 in  in do_executedo_execute
+
+  File   File ""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/ipykernel/kernelbase.py/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/ipykernel/kernelbase.py"", line , line 778778 in  in execute_requestexecute_request
+
+  File   File ""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/ipykernel/ipkernel.py/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/ipykernel/ipkernel.py"", line , line 362362 in  in execute_requestexecute_request
+
+  File   File ""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/ipykernel/kernelbase.py/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/ipykernel/kernelbase.py"", line , line 437437 in  in dispatch_shelldispatch_shell
+
+  File   File ""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/ipykernel/kernelbase.py/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/ipykernel/kernelbase.py"", line , line 534534 in  in process_oneprocess_one
+
+  File   File ""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/ipykernel/kernelbase.py/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/ipykernel/kernelbase.py"", line , line 545545 in  in dispatch_queuedispatch_queue
+
+  File   File ""/usr/lib/python3.10/asyncio/events.py/usr/lib/python3.10/asyncio/events.py"", line , line 8080 in  in _run_run
+
+  File   File ""/usr/lib/python3.10/asyncio/base_events.py/usr/lib/python3.10/asyncio/base_events.py"", line , line 19091909 in  in _run_once_run_once
+
+  File "  File /usr/lib/python3.10/asyncio/base_events.py""/usr/lib/python3.10/asyncio/base_events.py, line "603, line  in 603run_forever in
+run_forever
+  File "  File /home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/tornado/platform/asyncio.py""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/tornado/platform/asyncio.py, line "205, line  in 205start in
+start
+  File "  File /home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/ipykernel/kernelapp.py""/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/ipykernel/kernelapp.py, line "739, line  in 739start in
+start
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/traitlets/config/application.py  File "", line /home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/traitlets/config/application.py1075" in , line launch_instance1075
+ in launch_instance
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/ipykernel_launcher.py  File "", line /home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/ipykernel_launcher.py18" in , line <module>18
+ in <module>  File
+"  File /usr/lib/python3.10/runpy.py""/usr/lib/python3.10/runpy.py, line "86, line  in 86_run_code in
+_run_code
+  File "  File /usr/lib/python3.10/runpy.py""/usr/lib/python3.10/runpy.py, line "196, line  in 196_run_module_as_main in
+_run_module_as_main
+
+Extension modules: zmq.backend.cython._zmq
+Extension modules: zmq.backend.cython._zmq, tornado.speedups, tornado.speedups, psutil._psutil_linux, psutil._psutil_linux, psutil._psutil_posix, psutil._psutil_posix, , _pydevd_bundle.pydevd_cython_pydevd_bundle.pydevd_cython, , numpy._core._multiarray_umathnumpy._core._multiarray_umath, numpy.linalg._umath_linalg, numpy.linalg._umath_linalg, , torch._Ctorch._C, , torch._C._dynamo.autograd_compilertorch._C._dynamo.autograd_compiler, torch._C._dynamo.eval_frame, torch._C._dynamo.eval_frame, torch._C._dynamo.guards, torch._C._dynamo.guards, torch._C._dynamo.utils, torch._C._dynamo.utils, torch._C._fft, torch._C._fft, torch._C._linalg, torch._C._linalg, torch._C._nested, torch._C._nested, torch._C._nn, torch._C._nn, torch._C._sparse, torch._C._sparse, torch._C._special, torch._C._special, , numpy.random._commonnumpy.random._common, , numpy.random.bit_generatornumpy.random.bit_generator, , numpy.random._bounded_integersnumpy.random._bounded_integers, numpy.random._mt19937, numpy.random._mt19937, numpy.random.mtrand, numpy.random.mtrand, numpy.random._philox, numpy.random._philox, numpy.random._pcg64, numpy.random._pcg64, numpy.random._sfc64, numpy.random._sfc64, numpy.random._generator, numpy.random._generator, , charset_normalizer.mdcharset_normalizer.md, , requests.packages.charset_normalizer.mdrequests.packages.charset_normalizer.md, , requests.packages.chardet.mdrequests.packages.chardet.md, , yaml._yamlyaml._yaml, , PIL._imagingPIL._imaging, , google._upb._messagegoogle._upb._message (total:  (total: 3333))
+
+W0127 10:33:34.184000 6709 diffusion_toy/lib/python3.10/site-packages/torch/multiprocessing/spawn.py:160] Terminating process 6833 via signal SIGTERM
+E0127 10:33:50.335000 6709 diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:732] failed (exitcode: -11) local_rank: 0 (pid: 6832) of fn: train_loop (start_method: fork)
+E0127 10:33:50.335000 6709 diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:732] Traceback (most recent call last):
+E0127 10:33:50.335000 6709 diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:732]   File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 687, in _poll
+E0127 10:33:50.335000 6709 diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:732]     self._pc.join(-1)
+E0127 10:33:50.335000 6709 diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:732]   File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/torch/multiprocessing/spawn.py", line 184, in join
+E0127 10:33:50.335000 6709 diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:732]     raise ProcessExitedException(
+E0127 10:33:50.335000 6709 diffusion_toy/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:732] torch.multiprocessing.spawn.ProcessExitedException: process 0 terminated with signal SIGSEGV
+Launching training on one GPU.
+Epoch 0:   0%|          | 0/395 [00:00<?, ?it/s]/tmp/ipykernel_6709/3220645018.py:71: UserWarning: Using a target size (torch.Size([256, 2])) that is different to the input size (torch.Size([2])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  loss = F.mse_loss(noise_pred, noise)
+Epoch 0: 100%|█████████▉| 394/395 [00:03<00:00, 120.46it/s, loss=1.28, lr=7.6e-5, step=393] /tmp/ipykernel_6709/3220645018.py:71: UserWarning: Using a target size (torch.Size([136, 2])) that is different to the input size (torch.Size([2])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  loss = F.mse_loss(noise_pred, noise)
+Epoch 0: 100%|██████████| 395/395 [00:03<00:00, 120.46it/s, loss=0.977, lr=7.62e-5, step=394]/tmp/ipykernel_6709/3220645018.py:102: UserWarning: Using a target size (torch.Size([256, 2])) that is different to the input size (torch.Size([2])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  loss = F.mse_loss(noise_pred, noise)
+/tmp/ipykernel_6709/3220645018.py:102: UserWarning: Using a target size (torch.Size([232, 2])) that is different to the input size (torch.Size([2])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  loss = F.mse_loss(noise_pred, noise)
+self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 0: 100%|██████████| 395/395 [00:03<00:00, 112.73it/s, loss=0.977, lr=7.62e-5, step=394]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                   self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True) loss=1.05, lr=0.0001, step=789]   
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 1: 100%|██████████| 395/395 [00:03<00:00, 102.19it/s, loss=1.05, lr=0.0001, step=789]
+Epoch 2: 100%|██████████| 395/395 [00:02<00:00, 140.79it/s, loss=1.09, lr=0.0001, step=1184]self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 2: 100%|██████████| 395/395 [00:02<00:00, 134.63it/s, loss=1.09, lr=0.0001, step=1184]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                    self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True), loss=3.2, lr=0.0001, step=1579]  
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 3: 100%|██████████| 395/395 [00:03<00:00, 111.48it/s, loss=3.2, lr=0.0001, step=1579]
+Epoch 4: 100%|██████████| 395/395 [00:02<00:00, 134.44it/s, loss=1.11, lr=0.0001, step=1974]self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 4: 100%|██████████| 395/395 [00:02<00:00, 134.63it/s, loss=1.11, lr=0.0001, step=1974]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                      self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True), loss=0.87, lr=0.0001, step=2369] 
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 5: 100%|██████████| 395/395 [00:03<00:00, 108.78it/s, loss=0.87, lr=0.0001, step=2369]
+Epoch 6: 100%|██████████| 395/395 [00:03<00:00, 136.30it/s, loss=0.819, lr=0.0001, step=2764]self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 6: 100%|██████████| 395/395 [00:03<00:00, 128.08it/s, loss=0.819, lr=0.0001, step=2764]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                     self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True), loss=1.13, lr=0.0001, step=3159] 
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 7: 100%|██████████| 395/395 [00:03<00:00, 113.58it/s, loss=1.13, lr=0.0001, step=3159]
+Epoch 8: 100%|██████████| 395/395 [00:02<00:00, 146.01it/s, loss=1.09, lr=9.99e-5, step=3554]self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 8: 100%|██████████| 395/395 [00:02<00:00, 131.94it/s, loss=1.09, lr=9.99e-5, step=3554]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                      self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True), loss=1.03, lr=9.99e-5, step=3949] 
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 9: 100%|██████████| 395/395 [00:03<00:00, 115.41it/s, loss=1.03, lr=9.99e-5, step=3949]
+Epoch 10: 100%|██████████| 395/395 [00:02<00:00, 140.31it/s, loss=1.04, lr=9.99e-5, step=4344]self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 10: 100%|██████████| 395/395 [00:02<00:00, 135.91it/s, loss=1.04, lr=9.99e-5, step=4344]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                        self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=0.901, lr=9.99e-5, step=4739]
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 11: 100%|██████████| 395/395 [00:03<00:00, 110.60it/s, loss=0.901, lr=9.99e-5, step=4739]
+Epoch 12: 100%|██████████| 395/395 [00:02<00:00, 146.69it/s, loss=1.03, lr=9.99e-5, step=5134] self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 12: 100%|██████████| 395/395 [00:02<00:00, 140.51it/s, loss=1.03, lr=9.99e-5, step=5134]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                       self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=1.05, lr=9.98e-5, step=5529] 
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 13: 100%|██████████| 395/395 [00:03<00:00, 115.48it/s, loss=1.05, lr=9.98e-5, step=5529]
+Epoch 14: 100%|██████████| 395/395 [00:02<00:00, 146.04it/s, loss=1.13, lr=9.98e-5, step=5924] self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 14: 100%|██████████| 395/395 [00:02<00:00, 142.00it/s, loss=1.13, lr=9.98e-5, step=5924]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                       self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=1.55, lr=9.98e-5, step=6319] 
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 15: 100%|██████████| 395/395 [00:03<00:00, 115.67it/s, loss=1.55, lr=9.98e-5, step=6319]
+Epoch 16: 100%|██████████| 395/395 [00:03<00:00, 132.22it/s, loss=0.93, lr=9.98e-5, step=6714] self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 16: 100%|██████████| 395/395 [00:03<00:00, 125.06it/s, loss=0.93, lr=9.98e-5, step=6714]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                        self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=0.961, lr=9.97e-5, step=7109]
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 17: 100%|██████████| 395/395 [00:03<00:00, 117.06it/s, loss=0.961, lr=9.97e-5, step=7109]
+Epoch 18: 100%|██████████| 395/395 [00:03<00:00, 128.98it/s, loss=1.09, lr=9.97e-5, step=7504]self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 18: 100%|██████████| 395/395 [00:03<00:00, 130.46it/s, loss=1.09, lr=9.97e-5, step=7504]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                       self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=1.11, lr=9.97e-5, step=7899] 
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 19: 100%|██████████| 395/395 [00:03<00:00, 110.09it/s, loss=1.11, lr=9.97e-5, step=7899]
+Epoch 20: 100%|██████████| 395/395 [00:02<00:00, 140.01it/s, loss=1.1, lr=9.96e-5, step=8294]  self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 20: 100%|██████████| 395/395 [00:02<00:00, 136.06it/s, loss=1.1, lr=9.96e-5, step=8294]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                        self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=1.03, lr=9.96e-5, step=8689] 
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 21: 100%|██████████| 395/395 [00:03<00:00, 110.78it/s, loss=1.03, lr=9.96e-5, step=8689]
+Epoch 22: 100%|██████████| 395/395 [00:02<00:00, 143.87it/s, loss=1.04, lr=9.95e-5, step=9084] self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 22: 100%|██████████| 395/395 [00:02<00:00, 141.67it/s, loss=1.04, lr=9.95e-5, step=9084]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                        self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=1.08, lr=9.95e-5, step=9479] 
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 23: 100%|██████████| 395/395 [00:03<00:00, 116.65it/s, loss=1.08, lr=9.95e-5, step=9479]
+Epoch 24: 100%|██████████| 395/395 [00:03<00:00, 135.02it/s, loss=1.07, lr=9.94e-5, step=9874] self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 24: 100%|██████████| 395/395 [00:03<00:00, 128.92it/s, loss=1.07, lr=9.94e-5, step=9874]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                        self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=1, lr=9.94e-5, step=10269]    
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 25: 100%|██████████| 395/395 [00:03<00:00, 112.70it/s, loss=1, lr=9.94e-5, step=10269]
+Epoch 26: 100%|██████████| 395/395 [00:03<00:00, 90.78it/s, loss=1.18, lr=9.93e-5, step=10664]self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 26: 100%|██████████| 395/395 [00:03<00:00, 124.14it/s, loss=1.18, lr=9.93e-5, step=10664]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                         self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=0.927, lr=9.93e-5, step=11059]
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 27: 100%|██████████| 395/395 [00:03<00:00, 112.26it/s, loss=0.927, lr=9.93e-5, step=11059]
+Epoch 28: 100%|██████████| 395/395 [00:03<00:00, 130.02it/s, loss=1.05, lr=9.92e-5, step=11454]self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 28: 100%|██████████| 395/395 [00:03<00:00, 123.19it/s, loss=1.05, lr=9.92e-5, step=11454]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                        self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=1.08, lr=9.92e-5, step=11849] 
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 29: 100%|██████████| 395/395 [00:03<00:00, 106.04it/s, loss=1.08, lr=9.92e-5, step=11849]
+Epoch 30: 100%|██████████| 395/395 [00:03<00:00, 135.17it/s, loss=1.06, lr=9.91e-5, step=12244]self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 30: 100%|██████████| 395/395 [00:03<00:00, 129.03it/s, loss=1.06, lr=9.91e-5, step=12244]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                        self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=1.42, lr=9.91e-5, step=12639] 
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 31: 100%|██████████| 395/395 [00:03<00:00, 113.45it/s, loss=1.42, lr=9.91e-5, step=12639]
+Epoch 32: 100%|██████████| 395/395 [00:03<00:00, 134.62it/s, loss=1.17, lr=9.9e-5, step=13034]self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 32: 100%|██████████| 395/395 [00:03<00:00, 127.15it/s, loss=1.17, lr=9.9e-5, step=13034]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                         self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=1.23, lr=9.89e-5, step=13429] 
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 33: 100%|██████████| 395/395 [00:03<00:00, 115.32it/s, loss=1.23, lr=9.89e-5, step=13429]
+Epoch 34: 100%|██████████| 395/395 [00:03<00:00, 111.21it/s, loss=1, lr=9.89e-5, step=13824]  self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 34: 100%|██████████| 395/395 [00:03<00:00, 126.56it/s, loss=1, lr=9.89e-5, step=13824]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                         self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=1.05, lr=9.88e-5, step=14219] 
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 35: 100%|██████████| 395/395 [00:03<00:00, 111.44it/s, loss=1.05, lr=9.88e-5, step=14219]
+Epoch 36: 100%|██████████| 395/395 [00:02<00:00, 136.13it/s, loss=1.05, lr=9.87e-5, step=14614]self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 36: 100%|██████████| 395/395 [00:02<00:00, 135.02it/s, loss=1.05, lr=9.87e-5, step=14614]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                        self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=1.09, lr=9.87e-5, step=15009] 
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 37: 100%|██████████| 395/395 [00:03<00:00, 109.66it/s, loss=1.09, lr=9.87e-5, step=15009]
+Epoch 38: 100%|██████████| 395/395 [00:03<00:00, 130.95it/s, loss=1.05, lr=9.86e-5, step=15404]self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 38: 100%|██████████| 395/395 [00:03<00:00, 129.42it/s, loss=1.05, lr=9.86e-5, step=15404]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                         self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=0.878, lr=9.85e-5, step=15799]
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 39: 100%|██████████| 395/395 [00:03<00:00, 111.90it/s, loss=0.878, lr=9.85e-5, step=15799]
+Epoch 40: 100%|██████████| 395/395 [00:03<00:00, 134.04it/s, loss=0.91, lr=9.84e-5, step=16194]self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 40: 100%|██████████| 395/395 [00:03<00:00, 125.91it/s, loss=0.91, lr=9.84e-5, step=16194]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                         self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=0.941, lr=9.84e-5, step=16589]
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 41: 100%|██████████| 395/395 [00:03<00:00, 112.81it/s, loss=0.941, lr=9.84e-5, step=16589]
+Epoch 42: 100%|██████████| 395/395 [00:03<00:00, 120.54it/s, loss=1, lr=9.83e-5, step=16984]    self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 42: 100%|██████████| 395/395 [00:03<00:00, 121.91it/s, loss=1, lr=9.83e-5, step=16984]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                        self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=1.17, lr=9.82e-5, step=17379] 
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 43: 100%|██████████| 395/395 [00:03<00:00, 114.66it/s, loss=1.17, lr=9.82e-5, step=17379]
+Epoch 44: 100%|██████████| 395/395 [00:03<00:00, 127.89it/s, loss=1.08, lr=9.81e-5, step=17774] self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 44: 100%|██████████| 395/395 [00:03<00:00, 129.76it/s, loss=1.08, lr=9.81e-5, step=17774]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                        self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=0.999, lr=9.8e-5, step=18169] 
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 45: 100%|██████████| 395/395 [00:03<00:00, 109.14it/s, loss=0.999, lr=9.8e-5, step=18169]
+Epoch 46: 100%|██████████| 395/395 [00:02<00:00, 134.00it/s, loss=0.862, lr=9.79e-5, step=18564]self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 46: 100%|██████████| 395/395 [00:03<00:00, 131.00it/s, loss=0.862, lr=9.79e-5, step=18564]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                        self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=1, lr=9.79e-5, step=18959]    
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 47: 100%|██████████| 395/395 [00:03<00:00, 108.55it/s, loss=1, lr=9.79e-5, step=18959]
+Epoch 48: 100%|██████████| 395/395 [00:03<00:00, 139.31it/s, loss=1.12, lr=9.78e-5, step=19354] self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 48: 100%|██████████| 395/395 [00:03<00:00, 128.00it/s, loss=1.12, lr=9.78e-5, step=19354]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                        self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=1.04, lr=9.77e-5, step=19749] 
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 49: 100%|██████████| 395/395 [00:03<00:00, 116.07it/s, loss=1.04, lr=9.77e-5, step=19749]
+Epoch 50: 100%|██████████| 395/395 [00:03<00:00, 129.90it/s, loss=1.28, lr=9.76e-5, step=20144]self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 50: 100%|██████████| 395/395 [00:03<00:00, 125.68it/s, loss=1.28, lr=9.76e-5, step=20144]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                         self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=0.936, lr=9.75e-5, step=20539]
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 51: 100%|██████████| 395/395 [00:03<00:00, 109.66it/s, loss=0.936, lr=9.75e-5, step=20539]
+Epoch 52: 100%|██████████| 395/395 [00:03<00:00, 117.14it/s, loss=0.932, lr=9.74e-5, step=20934]self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 52: 100%|██████████| 395/395 [00:03<00:00, 123.64it/s, loss=0.932, lr=9.74e-5, step=20934]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                         self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=0.942, lr=9.73e-5, step=21329]
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 53: 100%|██████████| 395/395 [00:03<00:00, 102.08it/s, loss=0.942, lr=9.73e-5, step=21329]
+Epoch 54: 100%|██████████| 395/395 [00:03<00:00, 127.83it/s, loss=1.1, lr=9.72e-5, step=21724]  
+Early stopping at epoch 54
+ClassConditionedUnet(
+  (model): UNet2DModel(
+    (conv_in): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (time_proj): Timesteps()
+    (time_embedding): TimestepEmbedding(
+      (linear_1): Linear(in_features=32, out_features=128, bias=True)
+      (act): SiLU()
+      (linear_2): Linear(in_features=128, out_features=128, bias=True)
+    )
+    (down_blocks): ModuleList(
+      (0): DownBlock2D(
+        (resnets): ModuleList(
+          (0-1): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+          )
+        )
+        (downsamplers): ModuleList(
+          (0): Downsample2D(
+            (conv): Conv2d(32, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+          )
+        )
+      )
+      (1): AttnDownBlock2D(
+        (attentions): ModuleList(
+          (0-1): 2 x Attention(
+            (group_norm): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (to_q): Linear(in_features=64, out_features=64, bias=True)
+            (to_k): Linear(in_features=64, out_features=64, bias=True)
+            (to_v): Linear(in_features=64, out_features=64, bias=True)
+            (to_out): ModuleList(
+              (0): Linear(in_features=64, out_features=64, bias=True)
+              (1): Dropout(p=0.0, inplace=False)
+            )
+          )
+        )
+        (resnets): ModuleList(
+          (0): ResnetBlock2D(
+            (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (conv1): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=64, bias=True)
+            (norm2): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(32, 64, kernel_size=(1, 1), stride=(1, 1))
+          )
+          (1): ResnetBlock2D(
+            (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=64, bias=True)
+            (norm2): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+          )
+        )
+      )
+    )
+    (up_blocks): ModuleList(
+      (0): AttnUpBlock2D(
+        (attentions): ModuleList(
+          (0-2): 3 x Attention(
+            (group_norm): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (to_q): Linear(in_features=64, out_features=64, bias=True)
+            (to_k): Linear(in_features=64, out_features=64, bias=True)
+            (to_v): Linear(in_features=64, out_features=64, bias=True)
+            (to_out): ModuleList(
+              (0): Linear(in_features=64, out_features=64, bias=True)
+              (1): Dropout(p=0.0, inplace=False)
+            )
+          )
+        )
+        (resnets): ModuleList(
+          (0-1): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 128, eps=1e-05, affine=True)
+            (conv1): Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=64, bias=True)
+            (norm2): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1))
+          )
+          (2): ResnetBlock2D(
+            (norm1): GroupNorm(32, 96, eps=1e-05, affine=True)
+            (conv1): Conv2d(96, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=64, bias=True)
+            (norm2): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(96, 64, kernel_size=(1, 1), stride=(1, 1))
+          )
+        )
+        (upsamplers): ModuleList(
+          (0): Upsample2D(
+            (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+      )
+      (1): UpBlock2D(
+        (resnets): ModuleList(
+          (0): ResnetBlock2D(
+            (norm1): GroupNorm(32, 96, eps=1e-05, affine=True)
+            (conv1): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(96, 32, kernel_size=(1, 1), stride=(1, 1))
+          )
+          (1-2): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (conv1): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+          )
+        )
+      )
+    )
+    (mid_block): UNetMidBlock2D(
+      (attentions): ModuleList(
+        (0): Attention(
+          (group_norm): GroupNorm(32, 64, eps=1e-05, affine=True)
+          (to_q): Linear(in_features=64, out_features=64, bias=True)
+          (to_k): Linear(in_features=64, out_features=64, bias=True)
+          (to_v): Linear(in_features=64, out_features=64, bias=True)
+          (to_out): ModuleList(
+            (0): Linear(in_features=64, out_features=64, bias=True)
+            (1): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (resnets): ModuleList(
+        (0-1): 2 x ResnetBlock2D(
+          (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+          (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (time_emb_proj): Linear(in_features=128, out_features=64, bias=True)
+          (norm2): GroupNorm(32, 64, eps=1e-05, affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (nonlinearity): SiLU()
+        )
+      )
+    )
+    (conv_norm_out): GroupNorm(32, 32, eps=1e-05, affine=True)
+    (conv_act): SiLU()
+    (conv_out): Conv2d(32, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+)
+ClassConditionedUnet(
+  (model): UNet2DModel(
+    (conv_in): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (time_proj): Timesteps()
+    (time_embedding): TimestepEmbedding(
+      (linear_1): Linear(in_features=32, out_features=128, bias=True)
+      (act): SiLU()
+      (linear_2): Linear(in_features=128, out_features=128, bias=True)
+    )
+    (down_blocks): ModuleList(
+      (0): DownBlock2D(
+        (resnets): ModuleList(
+          (0-1): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+          )
+        )
+        (downsamplers): ModuleList(
+          (0): Downsample2D(
+            (conv): Conv2d(32, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+          )
+        )
+      )
+      (1): AttnDownBlock2D(
+        (attentions): ModuleList(
+          (0-1): 2 x Attention(
+            (group_norm): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (to_q): Linear(in_features=64, out_features=64, bias=True)
+            (to_k): Linear(in_features=64, out_features=64, bias=True)
+            (to_v): Linear(in_features=64, out_features=64, bias=True)
+            (to_out): ModuleList(
+              (0): Linear(in_features=64, out_features=64, bias=True)
+              (1): Dropout(p=0.0, inplace=False)
+            )
+          )
+        )
+        (resnets): ModuleList(
+          (0): ResnetBlock2D(
+            (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (conv1): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=64, bias=True)
+            (norm2): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(32, 64, kernel_size=(1, 1), stride=(1, 1))
+          )
+          (1): ResnetBlock2D(
+            (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=64, bias=True)
+            (norm2): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+          )
+        )
+      )
+    )
+    (up_blocks): ModuleList(
+      (0): AttnUpBlock2D(
+        (attentions): ModuleList(
+          (0-2): 3 x Attention(
+            (group_norm): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (to_q): Linear(in_features=64, out_features=64, bias=True)
+            (to_k): Linear(in_features=64, out_features=64, bias=True)
+            (to_v): Linear(in_features=64, out_features=64, bias=True)
+            (to_out): ModuleList(
+              (0): Linear(in_features=64, out_features=64, bias=True)
+              (1): Dropout(p=0.0, inplace=False)
+            )
+          )
+        )
+        (resnets): ModuleList(
+          (0-1): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 128, eps=1e-05, affine=True)
+            (conv1): Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=64, bias=True)
+            (norm2): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1))
+          )
+          (2): ResnetBlock2D(
+            (norm1): GroupNorm(32, 96, eps=1e-05, affine=True)
+            (conv1): Conv2d(96, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=64, bias=True)
+            (norm2): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(96, 64, kernel_size=(1, 1), stride=(1, 1))
+          )
+        )
+        (upsamplers): ModuleList(
+          (0): Upsample2D(
+            (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+      )
+      (1): UpBlock2D(
+        (resnets): ModuleList(
+          (0): ResnetBlock2D(
+            (norm1): GroupNorm(32, 96, eps=1e-05, affine=True)
+            (conv1): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(96, 32, kernel_size=(1, 1), stride=(1, 1))
+          )
+          (1-2): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (conv1): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+          )
+        )
+      )
+    )
+    (mid_block): UNetMidBlock2D(
+      (attentions): ModuleList(
+        (0): Attention(
+          (group_norm): GroupNorm(32, 64, eps=1e-05, affine=True)
+          (to_q): Linear(in_features=64, out_features=64, bias=True)
+          (to_k): Linear(in_features=64, out_features=64, bias=True)
+          (to_v): Linear(in_features=64, out_features=64, bias=True)
+          (to_out): ModuleList(
+            (0): Linear(in_features=64, out_features=64, bias=True)
+            (1): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (resnets): ModuleList(
+        (0-1): 2 x ResnetBlock2D(
+          (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+          (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (time_emb_proj): Linear(in_features=128, out_features=64, bias=True)
+          (norm2): GroupNorm(32, 64, eps=1e-05, affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (nonlinearity): SiLU()
+        )
+      )
+    )
+    (conv_norm_out): GroupNorm(32, 32, eps=1e-05, affine=True)
+    (conv_act): SiLU()
+    (conv_out): Conv2d(32, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+)
+Input shape: torch.Size([5])
+Noisy image shape: torch.Size([2])
+Noisy image: tensor([-1.4531,  1.4520])
+ClassConditionedUnet(
+  (model): UNet2DModel(
+    (conv_in): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (time_proj): Timesteps()
+    (time_embedding): TimestepEmbedding(
+      (linear_1): Linear(in_features=32, out_features=128, bias=True)
+      (act): SiLU()
+      (linear_2): Linear(in_features=128, out_features=128, bias=True)
+    )
+    (down_blocks): ModuleList(
+      (0): DownBlock2D(
+        (resnets): ModuleList(
+          (0-1): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+          )
+        )
+        (downsamplers): ModuleList(
+          (0): Downsample2D(
+            (conv): Conv2d(32, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+          )
+        )
+      )
+      (1): AttnDownBlock2D(
+        (attentions): ModuleList(
+          (0-1): 2 x Attention(
+            (group_norm): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (to_q): Linear(in_features=64, out_features=64, bias=True)
+            (to_k): Linear(in_features=64, out_features=64, bias=True)
+            (to_v): Linear(in_features=64, out_features=64, bias=True)
+            (to_out): ModuleList(
+              (0): Linear(in_features=64, out_features=64, bias=True)
+              (1): Dropout(p=0.0, inplace=False)
+            )
+          )
+        )
+        (resnets): ModuleList(
+          (0): ResnetBlock2D(
+            (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (conv1): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=64, bias=True)
+            (norm2): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(32, 64, kernel_size=(1, 1), stride=(1, 1))
+          )
+          (1): ResnetBlock2D(
+            (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=64, bias=True)
+            (norm2): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+          )
+        )
+      )
+    )
+    (up_blocks): ModuleList(
+      (0): AttnUpBlock2D(
+        (attentions): ModuleList(
+          (0-2): 3 x Attention(
+            (group_norm): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (to_q): Linear(in_features=64, out_features=64, bias=True)
+            (to_k): Linear(in_features=64, out_features=64, bias=True)
+            (to_v): Linear(in_features=64, out_features=64, bias=True)
+            (to_out): ModuleList(
+              (0): Linear(in_features=64, out_features=64, bias=True)
+              (1): Dropout(p=0.0, inplace=False)
+            )
+          )
+        )
+        (resnets): ModuleList(
+          (0-1): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 128, eps=1e-05, affine=True)
+            (conv1): Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=64, bias=True)
+            (norm2): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1))
+          )
+          (2): ResnetBlock2D(
+            (norm1): GroupNorm(32, 96, eps=1e-05, affine=True)
+            (conv1): Conv2d(96, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=64, bias=True)
+            (norm2): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(96, 64, kernel_size=(1, 1), stride=(1, 1))
+          )
+        )
+        (upsamplers): ModuleList(
+          (0): Upsample2D(
+            (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+      )
+      (1): UpBlock2D(
+        (resnets): ModuleList(
+          (0): ResnetBlock2D(
+            (norm1): GroupNorm(32, 96, eps=1e-05, affine=True)
+            (conv1): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(96, 32, kernel_size=(1, 1), stride=(1, 1))
+          )
+          (1-2): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (conv1): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+          )
+        )
+      )
+    )
+    (mid_block): UNetMidBlock2D(
+      (attentions): ModuleList(
+        (0): Attention(
+          (group_norm): GroupNorm(32, 64, eps=1e-05, affine=True)
+          (to_q): Linear(in_features=64, out_features=64, bias=True)
+          (to_k): Linear(in_features=64, out_features=64, bias=True)
+          (to_v): Linear(in_features=64, out_features=64, bias=True)
+          (to_out): ModuleList(
+            (0): Linear(in_features=64, out_features=64, bias=True)
+            (1): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (resnets): ModuleList(
+        (0-1): 2 x ResnetBlock2D(
+          (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+          (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (time_emb_proj): Linear(in_features=128, out_features=64, bias=True)
+          (norm2): GroupNorm(32, 64, eps=1e-05, affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (nonlinearity): SiLU()
+        )
+      )
+    )
+    (conv_norm_out): GroupNorm(32, 32, eps=1e-05, affine=True)
+    (conv_act): SiLU()
+    (conv_out): Conv2d(32, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+)

@@ -1,0 +1,998 @@
+Launching training on one GPU.
+Epoch 0: 100%|██████████| 395/395 [00:07<00:00, 53.18it/s, loss=0.599, lr=7.9e-5, step=394] self.unet=ClassConditionedUnet(
+  (model): UNet2DModel(
+    (conv_in): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (time_proj): Timesteps()
+    (time_embedding): TimestepEmbedding(
+      (linear_1): Linear(in_features=32, out_features=128, bias=True)
+      (act): SiLU()
+      (linear_2): Linear(in_features=128, out_features=128, bias=True)
+    )
+    (down_blocks): ModuleList(
+      (0): DownBlock2D(
+        (resnets): ModuleList(
+          (0-1): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+          )
+        )
+      )
+    )
+    (up_blocks): ModuleList(
+      (0): UpBlock2D(
+        (resnets): ModuleList(
+          (0-2): 3 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (conv1): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+          )
+        )
+      )
+    )
+    (mid_block): UNetMidBlock2D(
+      (attentions): ModuleList(
+        (0): Attention(
+          (group_norm): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (to_q): Linear(in_features=32, out_features=32, bias=True)
+          (to_k): Linear(in_features=32, out_features=32, bias=True)
+          (to_v): Linear(in_features=32, out_features=32, bias=True)
+          (to_out): ModuleList(
+            (0): Linear(in_features=32, out_features=32, bias=True)
+            (1): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (resnets): ModuleList(
+        (0-1): 2 x ResnetBlock2D(
+          (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+          (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (nonlinearity): SiLU()
+        )
+      )
+    )
+    (conv_norm_out): GroupNorm(32, 32, eps=1e-05, affine=True)
+    (conv_act): SiLU()
+    (conv_out): Conv2d(32, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+) of type <class '__main__.ClassConditionedUnet'> cannot be saved.
+Epoch 0: 100%|██████████| 395/395 [00:08<00:00, 49.27it/s, loss=0.599, lr=7.9e-5, step=394]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                    self.unet=ClassConditionedUnet(
+  (model): UNet2DModel(█| 395/395 [00:08<00:00, 48.00it/s, loss=0.565, lr=0.0001, step=789] 
+    (conv_in): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (time_proj): Timesteps()
+    (time_embedding): TimestepEmbedding(
+      (linear_1): Linear(in_features=32, out_features=128, bias=True)
+      (act): SiLU()
+      (linear_2): Linear(in_features=128, out_features=128, bias=True)
+    )
+    (down_blocks): ModuleList(
+      (0): DownBlock2D(
+        (resnets): ModuleList(
+          (0-1): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+          )
+        )
+      )
+    )
+    (up_blocks): ModuleList(
+      (0): UpBlock2D(
+        (resnets): ModuleList(
+          (0-2): 3 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (conv1): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+          )
+        )
+      )
+    )
+    (mid_block): UNetMidBlock2D(
+      (attentions): ModuleList(
+        (0): Attention(
+          (group_norm): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (to_q): Linear(in_features=32, out_features=32, bias=True)
+          (to_k): Linear(in_features=32, out_features=32, bias=True)
+          (to_v): Linear(in_features=32, out_features=32, bias=True)
+          (to_out): ModuleList(
+            (0): Linear(in_features=32, out_features=32, bias=True)
+            (1): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (resnets): ModuleList(
+        (0-1): 2 x ResnetBlock2D(
+          (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+          (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (nonlinearity): SiLU()
+        )
+      )
+    )
+    (conv_norm_out): GroupNorm(32, 32, eps=1e-05, affine=True)
+    (conv_act): SiLU()
+    (conv_out): Conv2d(32, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+) of type <class '__main__.ClassConditionedUnet'> cannot be saved.
+Epoch 1: 100%|██████████| 395/395 [00:08<00:00, 47.68it/s, loss=0.565, lr=0.0001, step=789]
+Epoch 2: 100%|██████████| 395/395 [00:07<00:00, 55.37it/s, loss=0.442, lr=0.0001, step=1184]self.unet=ClassConditionedUnet(
+  (model): UNet2DModel(
+    (conv_in): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (time_proj): Timesteps()
+    (time_embedding): TimestepEmbedding(
+      (linear_1): Linear(in_features=32, out_features=128, bias=True)
+      (act): SiLU()
+      (linear_2): Linear(in_features=128, out_features=128, bias=True)
+    )
+    (down_blocks): ModuleList(
+      (0): DownBlock2D(
+        (resnets): ModuleList(
+          (0-1): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+          )
+        )
+      )
+    )
+    (up_blocks): ModuleList(
+      (0): UpBlock2D(
+        (resnets): ModuleList(
+          (0-2): 3 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (conv1): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+          )
+        )
+      )
+    )
+    (mid_block): UNetMidBlock2D(
+      (attentions): ModuleList(
+        (0): Attention(
+          (group_norm): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (to_q): Linear(in_features=32, out_features=32, bias=True)
+          (to_k): Linear(in_features=32, out_features=32, bias=True)
+          (to_v): Linear(in_features=32, out_features=32, bias=True)
+          (to_out): ModuleList(
+            (0): Linear(in_features=32, out_features=32, bias=True)
+            (1): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (resnets): ModuleList(
+        (0-1): 2 x ResnetBlock2D(
+          (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+          (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (nonlinearity): SiLU()
+        )
+      )
+    )
+    (conv_norm_out): GroupNorm(32, 32, eps=1e-05, affine=True)
+    (conv_act): SiLU()
+    (conv_out): Conv2d(32, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+) of type <class '__main__.ClassConditionedUnet'> cannot be saved.
+Epoch 2: 100%|██████████| 395/395 [00:07<00:00, 52.43it/s, loss=0.442, lr=0.0001, step=1184]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                     self.unet=ClassConditionedUnet(
+  (model): UNet2DModel(█| 395/395 [00:08<00:00, 47.22it/s, loss=0.503, lr=0.0001, step=1579]
+    (conv_in): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (time_proj): Timesteps()
+    (time_embedding): TimestepEmbedding(
+      (linear_1): Linear(in_features=32, out_features=128, bias=True)
+      (act): SiLU()
+      (linear_2): Linear(in_features=128, out_features=128, bias=True)
+    )
+    (down_blocks): ModuleList(
+      (0): DownBlock2D(
+        (resnets): ModuleList(
+          (0-1): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+          )
+        )
+      )
+    )
+    (up_blocks): ModuleList(
+      (0): UpBlock2D(
+        (resnets): ModuleList(
+          (0-2): 3 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (conv1): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+          )
+        )
+      )
+    )
+    (mid_block): UNetMidBlock2D(
+      (attentions): ModuleList(
+        (0): Attention(
+          (group_norm): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (to_q): Linear(in_features=32, out_features=32, bias=True)
+          (to_k): Linear(in_features=32, out_features=32, bias=True)
+          (to_v): Linear(in_features=32, out_features=32, bias=True)
+          (to_out): ModuleList(
+            (0): Linear(in_features=32, out_features=32, bias=True)
+            (1): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (resnets): ModuleList(
+        (0-1): 2 x ResnetBlock2D(
+          (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+          (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (nonlinearity): SiLU()
+        )
+      )
+    )
+    (conv_norm_out): GroupNorm(32, 32, eps=1e-05, affine=True)
+    (conv_act): SiLU()
+    (conv_out): Conv2d(32, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+) of type <class '__main__.ClassConditionedUnet'> cannot be saved.
+Epoch 3: 100%|██████████| 395/395 [00:08<00:00, 48.32it/s, loss=0.503, lr=0.0001, step=1579]
+Epoch 4: 100%|██████████| 395/395 [00:07<00:00, 51.92it/s, loss=0.402, lr=0.0001, step=1974]self.unet=ClassConditionedUnet(
+  (model): UNet2DModel(
+    (conv_in): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (time_proj): Timesteps()
+    (time_embedding): TimestepEmbedding(
+      (linear_1): Linear(in_features=32, out_features=128, bias=True)
+      (act): SiLU()
+      (linear_2): Linear(in_features=128, out_features=128, bias=True)
+    )
+    (down_blocks): ModuleList(
+      (0): DownBlock2D(
+        (resnets): ModuleList(
+          (0-1): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+          )
+        )
+      )
+    )
+    (up_blocks): ModuleList(
+      (0): UpBlock2D(
+        (resnets): ModuleList(
+          (0-2): 3 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (conv1): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+          )
+        )
+      )
+    )
+    (mid_block): UNetMidBlock2D(
+      (attentions): ModuleList(
+        (0): Attention(
+          (group_norm): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (to_q): Linear(in_features=32, out_features=32, bias=True)
+          (to_k): Linear(in_features=32, out_features=32, bias=True)
+          (to_v): Linear(in_features=32, out_features=32, bias=True)
+          (to_out): ModuleList(
+            (0): Linear(in_features=32, out_features=32, bias=True)
+            (1): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (resnets): ModuleList(
+        (0-1): 2 x ResnetBlock2D(
+          (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+          (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (nonlinearity): SiLU()
+        )
+      )
+    )
+    (conv_norm_out): GroupNorm(32, 32, eps=1e-05, affine=True)
+    (conv_act): SiLU()
+    (conv_out): Conv2d(32, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+) of type <class '__main__.ClassConditionedUnet'> cannot be saved.
+Epoch 4: 100%|██████████| 395/395 [00:07<00:00, 53.18it/s, loss=0.402, lr=0.0001, step=1974]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                     self.unet=ClassConditionedUnet(
+  (model): UNet2DModel(█| 395/395 [00:08<00:00, 45.32it/s, loss=0.429, lr=0.0001, step=2369]
+    (conv_in): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (time_proj): Timesteps()
+    (time_embedding): TimestepEmbedding(
+      (linear_1): Linear(in_features=32, out_features=128, bias=True)
+      (act): SiLU()
+      (linear_2): Linear(in_features=128, out_features=128, bias=True)
+    )
+    (down_blocks): ModuleList(
+      (0): DownBlock2D(
+        (resnets): ModuleList(
+          (0-1): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+          )
+        )
+      )
+    )
+    (up_blocks): ModuleList(
+      (0): UpBlock2D(
+        (resnets): ModuleList(
+          (0-2): 3 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (conv1): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+          )
+        )
+      )
+    )
+    (mid_block): UNetMidBlock2D(
+      (attentions): ModuleList(
+        (0): Attention(
+          (group_norm): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (to_q): Linear(in_features=32, out_features=32, bias=True)
+          (to_k): Linear(in_features=32, out_features=32, bias=True)
+          (to_v): Linear(in_features=32, out_features=32, bias=True)
+          (to_out): ModuleList(
+            (0): Linear(in_features=32, out_features=32, bias=True)
+            (1): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (resnets): ModuleList(
+        (0-1): 2 x ResnetBlock2D(
+          (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+          (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (nonlinearity): SiLU()
+        )
+      )
+    )
+    (conv_norm_out): GroupNorm(32, 32, eps=1e-05, affine=True)
+    (conv_act): SiLU()
+    (conv_out): Conv2d(32, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+) of type <class '__main__.ClassConditionedUnet'> cannot be saved.
+Epoch 5: 100%|██████████| 395/395 [00:08<00:00, 47.39it/s, loss=0.429, lr=0.0001, step=2369]
+Epoch 6: 100%|██████████| 395/395 [00:07<00:00, 51.81it/s, loss=0.437, lr=0.0001, step=2764]self.unet=ClassConditionedUnet(
+  (model): UNet2DModel(
+    (conv_in): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (time_proj): Timesteps()
+    (time_embedding): TimestepEmbedding(
+      (linear_1): Linear(in_features=32, out_features=128, bias=True)
+      (act): SiLU()
+      (linear_2): Linear(in_features=128, out_features=128, bias=True)
+    )
+    (down_blocks): ModuleList(
+      (0): DownBlock2D(
+        (resnets): ModuleList(
+          (0-1): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+          )
+        )
+      )
+    )
+    (up_blocks): ModuleList(
+      (0): UpBlock2D(
+        (resnets): ModuleList(
+          (0-2): 3 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (conv1): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+          )
+        )
+      )
+    )
+    (mid_block): UNetMidBlock2D(
+      (attentions): ModuleList(
+        (0): Attention(
+          (group_norm): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (to_q): Linear(in_features=32, out_features=32, bias=True)
+          (to_k): Linear(in_features=32, out_features=32, bias=True)
+          (to_v): Linear(in_features=32, out_features=32, bias=True)
+          (to_out): ModuleList(
+            (0): Linear(in_features=32, out_features=32, bias=True)
+            (1): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (resnets): ModuleList(
+        (0-1): 2 x ResnetBlock2D(
+          (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+          (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (nonlinearity): SiLU()
+        )
+      )
+    )
+    (conv_norm_out): GroupNorm(32, 32, eps=1e-05, affine=True)
+    (conv_act): SiLU()
+    (conv_out): Conv2d(32, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+) of type <class '__main__.ClassConditionedUnet'> cannot be saved.
+Epoch 6: 100%|██████████| 395/395 [00:07<00:00, 51.84it/s, loss=0.437, lr=0.0001, step=2764]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                     self.unet=ClassConditionedUnet(
+  (model): UNet2DModel(█| 395/395 [00:08<00:00, 48.01it/s, loss=0.487, lr=0.0001, step=3159]
+    (conv_in): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (time_proj): Timesteps()
+    (time_embedding): TimestepEmbedding(
+      (linear_1): Linear(in_features=32, out_features=128, bias=True)
+      (act): SiLU()
+      (linear_2): Linear(in_features=128, out_features=128, bias=True)
+    )
+    (down_blocks): ModuleList(
+      (0): DownBlock2D(
+        (resnets): ModuleList(
+          (0-1): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+          )
+        )
+      )
+    )
+    (up_blocks): ModuleList(
+      (0): UpBlock2D(
+        (resnets): ModuleList(
+          (0-2): 3 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (conv1): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+          )
+        )
+      )
+    )
+    (mid_block): UNetMidBlock2D(
+      (attentions): ModuleList(
+        (0): Attention(
+          (group_norm): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (to_q): Linear(in_features=32, out_features=32, bias=True)
+          (to_k): Linear(in_features=32, out_features=32, bias=True)
+          (to_v): Linear(in_features=32, out_features=32, bias=True)
+          (to_out): ModuleList(
+            (0): Linear(in_features=32, out_features=32, bias=True)
+            (1): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (resnets): ModuleList(
+        (0-1): 2 x ResnetBlock2D(
+          (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+          (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (nonlinearity): SiLU()
+        )
+      )
+    )
+    (conv_norm_out): GroupNorm(32, 32, eps=1e-05, affine=True)
+    (conv_act): SiLU()
+    (conv_out): Conv2d(32, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+) of type <class '__main__.ClassConditionedUnet'> cannot be saved.
+Epoch 7: 100%|██████████| 395/395 [00:08<00:00, 48.01it/s, loss=0.487, lr=0.0001, step=3159]
+Epoch 8: 100%|██████████| 395/395 [00:07<00:00, 53.08it/s, loss=0.376, lr=9.99e-5, step=3554]self.unet=ClassConditionedUnet(
+  (model): UNet2DModel(
+    (conv_in): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (time_proj): Timesteps()
+    (time_embedding): TimestepEmbedding(
+      (linear_1): Linear(in_features=32, out_features=128, bias=True)
+      (act): SiLU()
+      (linear_2): Linear(in_features=128, out_features=128, bias=True)
+    )
+    (down_blocks): ModuleList(
+      (0): DownBlock2D(
+        (resnets): ModuleList(
+          (0-1): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+          )
+        )
+      )
+    )
+    (up_blocks): ModuleList(
+      (0): UpBlock2D(
+        (resnets): ModuleList(
+          (0-2): 3 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (conv1): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+          )
+        )
+      )
+    )
+    (mid_block): UNetMidBlock2D(
+      (attentions): ModuleList(
+        (0): Attention(
+          (group_norm): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (to_q): Linear(in_features=32, out_features=32, bias=True)
+          (to_k): Linear(in_features=32, out_features=32, bias=True)
+          (to_v): Linear(in_features=32, out_features=32, bias=True)
+          (to_out): ModuleList(
+            (0): Linear(in_features=32, out_features=32, bias=True)
+            (1): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (resnets): ModuleList(
+        (0-1): 2 x ResnetBlock2D(
+          (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+          (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (nonlinearity): SiLU()
+        )
+      )
+    )
+    (conv_norm_out): GroupNorm(32, 32, eps=1e-05, affine=True)
+    (conv_act): SiLU()
+    (conv_out): Conv2d(32, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+) of type <class '__main__.ClassConditionedUnet'> cannot be saved.
+Epoch 8: 100%|██████████| 395/395 [00:07<00:00, 50.79it/s, loss=0.376, lr=9.99e-5, step=3554]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                      self.unet=ClassConditionedUnet(
+  (model): UNet2DModel(█| 395/395 [00:08<00:00, 48.36it/s, loss=0.354, lr=9.99e-5, step=3949]
+    (conv_in): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (time_proj): Timesteps()
+    (time_embedding): TimestepEmbedding(
+      (linear_1): Linear(in_features=32, out_features=128, bias=True)
+      (act): SiLU()
+      (linear_2): Linear(in_features=128, out_features=128, bias=True)
+    )
+    (down_blocks): ModuleList(
+      (0): DownBlock2D(
+        (resnets): ModuleList(
+          (0-1): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+          )
+        )
+      )
+    )
+    (up_blocks): ModuleList(
+      (0): UpBlock2D(
+        (resnets): ModuleList(
+          (0-2): 3 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (conv1): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+          )
+        )
+      )
+    )
+    (mid_block): UNetMidBlock2D(
+      (attentions): ModuleList(
+        (0): Attention(
+          (group_norm): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (to_q): Linear(in_features=32, out_features=32, bias=True)
+          (to_k): Linear(in_features=32, out_features=32, bias=True)
+          (to_v): Linear(in_features=32, out_features=32, bias=True)
+          (to_out): ModuleList(
+            (0): Linear(in_features=32, out_features=32, bias=True)
+            (1): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (resnets): ModuleList(
+        (0-1): 2 x ResnetBlock2D(
+          (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+          (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (nonlinearity): SiLU()
+        )
+      )
+    )
+    (conv_norm_out): GroupNorm(32, 32, eps=1e-05, affine=True)
+    (conv_act): SiLU()
+    (conv_out): Conv2d(32, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+) of type <class '__main__.ClassConditionedUnet'> cannot be saved.
+Epoch 9: 100%|██████████| 395/395 [00:08<00:00, 47.10it/s, loss=0.354, lr=9.99e-5, step=3949]
+Epoch 10: 100%|██████████| 395/395 [00:07<00:00, 51.74it/s, loss=0.394, lr=9.99e-5, step=4344]self.unet=ClassConditionedUnet(
+  (model): UNet2DModel(
+    (conv_in): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (time_proj): Timesteps()
+    (time_embedding): TimestepEmbedding(
+      (linear_1): Linear(in_features=32, out_features=128, bias=True)
+      (act): SiLU()
+      (linear_2): Linear(in_features=128, out_features=128, bias=True)
+    )
+    (down_blocks): ModuleList(
+      (0): DownBlock2D(
+        (resnets): ModuleList(
+          (0-1): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+          )
+        )
+      )
+    )
+    (up_blocks): ModuleList(
+      (0): UpBlock2D(
+        (resnets): ModuleList(
+          (0-2): 3 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (conv1): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+          )
+        )
+      )
+    )
+    (mid_block): UNetMidBlock2D(
+      (attentions): ModuleList(
+        (0): Attention(
+          (group_norm): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (to_q): Linear(in_features=32, out_features=32, bias=True)
+          (to_k): Linear(in_features=32, out_features=32, bias=True)
+          (to_v): Linear(in_features=32, out_features=32, bias=True)
+          (to_out): ModuleList(
+            (0): Linear(in_features=32, out_features=32, bias=True)
+            (1): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (resnets): ModuleList(
+        (0-1): 2 x ResnetBlock2D(
+          (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+          (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (nonlinearity): SiLU()
+        )
+      )
+    )
+    (conv_norm_out): GroupNorm(32, 32, eps=1e-05, affine=True)
+    (conv_act): SiLU()
+    (conv_out): Conv2d(32, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+) of type <class '__main__.ClassConditionedUnet'> cannot be saved.
+Epoch 10: 100%|██████████| 395/395 [00:07<00:00, 51.69it/s, loss=0.394, lr=9.99e-5, step=4344]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                       self.unet=ClassConditionedUnet(
+  (model): UNet2DModel(██| 395/395 [00:08<00:00, 46.43it/s, loss=0.474, lr=9.99e-5, step=4739]
+    (conv_in): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (time_proj): Timesteps()
+    (time_embedding): TimestepEmbedding(
+      (linear_1): Linear(in_features=32, out_features=128, bias=True)
+      (act): SiLU()
+      (linear_2): Linear(in_features=128, out_features=128, bias=True)
+    )
+    (down_blocks): ModuleList(
+      (0): DownBlock2D(
+        (resnets): ModuleList(
+          (0-1): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+          )
+        )
+      )
+    )
+    (up_blocks): ModuleList(
+      (0): UpBlock2D(
+        (resnets): ModuleList(
+          (0-2): 3 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (conv1): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+          )
+        )
+      )
+    )
+    (mid_block): UNetMidBlock2D(
+      (attentions): ModuleList(
+        (0): Attention(
+          (group_norm): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (to_q): Linear(in_features=32, out_features=32, bias=True)
+          (to_k): Linear(in_features=32, out_features=32, bias=True)
+          (to_v): Linear(in_features=32, out_features=32, bias=True)
+          (to_out): ModuleList(
+            (0): Linear(in_features=32, out_features=32, bias=True)
+            (1): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (resnets): ModuleList(
+        (0-1): 2 x ResnetBlock2D(
+          (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+          (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (nonlinearity): SiLU()
+        )
+      )
+    )
+    (conv_norm_out): GroupNorm(32, 32, eps=1e-05, affine=True)
+    (conv_act): SiLU()
+    (conv_out): Conv2d(32, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+) of type <class '__main__.ClassConditionedUnet'> cannot be saved.
+Epoch 11: 100%|██████████| 395/395 [00:08<00:00, 46.67it/s, loss=0.474, lr=9.99e-5, step=4739]
+Epoch 12: 100%|██████████| 395/395 [00:07<00:00, 54.58it/s, loss=0.387, lr=9.99e-5, step=5134]self.unet=ClassConditionedUnet(
+  (model): UNet2DModel(
+    (conv_in): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (time_proj): Timesteps()
+    (time_embedding): TimestepEmbedding(
+      (linear_1): Linear(in_features=32, out_features=128, bias=True)
+      (act): SiLU()
+      (linear_2): Linear(in_features=128, out_features=128, bias=True)
+    )
+    (down_blocks): ModuleList(
+      (0): DownBlock2D(
+        (resnets): ModuleList(
+          (0-1): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+          )
+        )
+      )
+    )
+    (up_blocks): ModuleList(
+      (0): UpBlock2D(
+        (resnets): ModuleList(
+          (0-2): 3 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (conv1): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+          )
+        )
+      )
+    )
+    (mid_block): UNetMidBlock2D(
+      (attentions): ModuleList(
+        (0): Attention(
+          (group_norm): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (to_q): Linear(in_features=32, out_features=32, bias=True)
+          (to_k): Linear(in_features=32, out_features=32, bias=True)
+          (to_v): Linear(in_features=32, out_features=32, bias=True)
+          (to_out): ModuleList(
+            (0): Linear(in_features=32, out_features=32, bias=True)
+            (1): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (resnets): ModuleList(
+        (0-1): 2 x ResnetBlock2D(
+          (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+          (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (nonlinearity): SiLU()
+        )
+      )
+    )
+    (conv_norm_out): GroupNorm(32, 32, eps=1e-05, affine=True)
+    (conv_act): SiLU()
+    (conv_out): Conv2d(32, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+) of type <class '__main__.ClassConditionedUnet'> cannot be saved.
+Epoch 12: 100%|██████████| 395/395 [00:07<00:00, 52.81it/s, loss=0.387, lr=9.99e-5, step=5134]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                       self.unet=ClassConditionedUnet(
+  (model): UNet2DModel(██| 395/395 [00:08<00:00, 46.55it/s, loss=0.361, lr=9.98e-5, step=5529]
+    (conv_in): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (time_proj): Timesteps()
+    (time_embedding): TimestepEmbedding(
+      (linear_1): Linear(in_features=32, out_features=128, bias=True)
+      (act): SiLU()
+      (linear_2): Linear(in_features=128, out_features=128, bias=True)
+    )
+    (down_blocks): ModuleList(
+      (0): DownBlock2D(
+        (resnets): ModuleList(
+          (0-1): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+          )
+        )
+      )
+    )
+    (up_blocks): ModuleList(
+      (0): UpBlock2D(
+        (resnets): ModuleList(
+          (0-2): 3 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (conv1): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+          )
+        )
+      )
+    )
+    (mid_block): UNetMidBlock2D(
+      (attentions): ModuleList(
+        (0): Attention(
+          (group_norm): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (to_q): Linear(in_features=32, out_features=32, bias=True)
+          (to_k): Linear(in_features=32, out_features=32, bias=True)
+          (to_v): Linear(in_features=32, out_features=32, bias=True)
+          (to_out): ModuleList(
+            (0): Linear(in_features=32, out_features=32, bias=True)
+            (1): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (resnets): ModuleList(
+        (0-1): 2 x ResnetBlock2D(
+          (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+          (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (nonlinearity): SiLU()
+        )
+      )
+    )
+    (conv_norm_out): GroupNorm(32, 32, eps=1e-05, affine=True)
+    (conv_act): SiLU()
+    (conv_out): Conv2d(32, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+) of type <class '__main__.ClassConditionedUnet'> cannot be saved.
+Epoch 13: 100%|██████████| 395/395 [00:08<00:00, 46.13it/s, loss=0.361, lr=9.98e-5, step=5529]
+Epoch 14:  47%|████▋     | 184/395 [00:18<00:04, 51.42it/s, loss=0.447, lr=9.98e-5, step=5713]
+Launching training on one GPU.
+Epoch 0:  42%|████▏     | 167/395 [00:03<00:05, 43.48it/s, loss=0.433, lr=9.98e-5, step=166]

@@ -1,0 +1,206 @@
+Launching training on one GPU.
+Epoch 0: 100%|██████████| 395/395 [00:08<00:00, 54.58it/s, loss=0.646, lr=7.9e-5, step=394] /tmp/ipykernel_12710/1279022285.py:102: UserWarning: Using a target size (torch.Size([256, 2])) that is different to the input size (torch.Size([1, 2, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  loss = F.mse_loss(noise_pred, noise)
+Epoch 0: 100%|██████████| 395/395 [00:19<00:00, 54.58it/s, loss=0.646, lr=7.9e-5, step=394]Traceback (most recent call last):
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/completer.py", line 1242, in _evaluate_expr
+    obj = guarded_eval(
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/guarded_eval.py", line 389, in guarded_eval
+    return eval_node(expression, context)
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/guarded_eval.py", line 499, in eval_node
+    return eval_node(node.body, context)
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/guarded_eval.py", line 613, in eval_node
+    func = eval_node(node.func, context)
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/guarded_eval.py", line 596, in eval_node
+    return _eval_node_name(node.id, context)
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/guarded_eval.py", line 729, in _eval_node_name
+    raise NameError(f"{node_id} not found in locals, globals, nor builtins")
+NameError: odel not found in locals, globals, nor builtins
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/completer.py", line 3246, in _complete
+    result = matcher(context)
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/completer.py", line 2365, in python_matcher
+    matches, fragment = self._attr_matches(text, include_prefix=False)
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/completer.py", line 1156, in _attr_matches
+    obj = self._evaluate_expr(expr)
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/completer.py", line 1258, in _evaluate_expr
+    expr = self._trim_expr(expr)
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/completer.py", line 1229, in _trim_expr
+    expr = res.body[0].value
+AttributeError: 'Delete' object has no attribute 'value'
+Traceback (most recent call last):
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/completer.py", line 1242, in _evaluate_expr
+    obj = guarded_eval(
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/guarded_eval.py", line 389, in guarded_eval
+    return eval_node(expression, context)
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/guarded_eval.py", line 499, in eval_node
+    return eval_node(node.body, context)
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/guarded_eval.py", line 613, in eval_node
+    func = eval_node(node.func, context)
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/guarded_eval.py", line 596, in eval_node
+    return _eval_node_name(node.id, context)
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/guarded_eval.py", line 729, in _eval_node_name
+    raise NameError(f"{node_id} not found in locals, globals, nor builtins")
+NameError: odel not found in locals, globals, nor builtins
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/completer.py", line 3246, in _complete
+    result = matcher(context)
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/completer.py", line 2365, in python_matcher
+    matches, fragment = self._attr_matches(text, include_prefix=False)
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/completer.py", line 1156, in _attr_matches
+    obj = self._evaluate_expr(expr)
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/completer.py", line 1258, in _evaluate_expr
+    expr = self._trim_expr(expr)
+  File "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/lib/python3.10/site-packages/IPython/core/completer.py", line 1229, in _trim_expr
+    expr = res.body[0].value
+AttributeError: 'Delete' object has no attribute 'value'
+Launching training on one GPU.
+                                                                                           self.unet=ClassConditionedUnet(
+  (model): UNet2DModel(█| 395/395 [00:08<00:00, 37.61it/s, loss=0.435, lr=0.0001, step=394] 
+    (conv_in): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (time_proj): Timesteps()
+    (time_embedding): TimestepEmbedding(
+      (linear_1): Linear(in_features=32, out_features=128, bias=True)
+      (act): SiLU()
+      (linear_2): Linear(in_features=128, out_features=128, bias=True)
+    )
+    (down_blocks): ModuleList(
+      (0): DownBlock2D(
+        (resnets): ModuleList(
+          (0-1): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+          )
+        )
+      )
+    )
+    (up_blocks): ModuleList(
+      (0): UpBlock2D(
+        (resnets): ModuleList(
+          (0-2): 3 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (conv1): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+          )
+        )
+      )
+    )
+    (mid_block): UNetMidBlock2D(
+      (attentions): ModuleList(
+        (0): Attention(
+          (group_norm): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (to_q): Linear(in_features=32, out_features=32, bias=True)
+          (to_k): Linear(in_features=32, out_features=32, bias=True)
+          (to_v): Linear(in_features=32, out_features=32, bias=True)
+          (to_out): ModuleList(
+            (0): Linear(in_features=32, out_features=32, bias=True)
+            (1): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (resnets): ModuleList(
+        (0-1): 2 x ResnetBlock2D(
+          (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+          (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (nonlinearity): SiLU()
+        )
+      )
+    )
+    (conv_norm_out): GroupNorm(32, 32, eps=1e-05, affine=True)
+    (conv_act): SiLU()
+    (conv_out): Conv2d(32, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+) of type <class '__main__.ClassConditionedUnet'> cannot be saved.
+Epoch 0: 100%|██████████| 395/395 [00:08<00:00, 45.03it/s, loss=0.435, lr=0.0001, step=394]
+                                                                                           self.unet=ClassConditionedUnet(
+  (model): UNet2DModel([00:00<?, ?it/s]
+    (conv_in): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))1, step=789]
+    (time_proj): Timesteps()
+    (time_embedding): TimestepEmbedding(
+      (linear_1): Linear(in_features=32, out_features=128, bias=True)
+      (act): SiLU()
+      (linear_2): Linear(in_features=128, out_features=128, bias=True)
+    )
+    (down_blocks): ModuleList(
+      (0): DownBlock2D(
+        (resnets): ModuleList(
+          (0-1): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+          )
+        )
+      )
+    )
+    (up_blocks): ModuleList(
+      (0): UpBlock2D(
+        (resnets): ModuleList(
+          (0-2): 3 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 64, eps=1e-05, affine=True)
+            (conv1): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+            (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+            (conv_shortcut): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+          )
+        )
+      )
+    )
+    (mid_block): UNetMidBlock2D(
+      (attentions): ModuleList(
+        (0): Attention(
+          (group_norm): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (to_q): Linear(in_features=32, out_features=32, bias=True)
+          (to_k): Linear(in_features=32, out_features=32, bias=True)
+          (to_v): Linear(in_features=32, out_features=32, bias=True)
+          (to_out): ModuleList(
+            (0): Linear(in_features=32, out_features=32, bias=True)
+            (1): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (resnets): ModuleList(
+        (0-1): 2 x ResnetBlock2D(
+          (norm1): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (time_emb_proj): Linear(in_features=128, out_features=32, bias=True)
+          (norm2): GroupNorm(32, 32, eps=1e-05, affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (nonlinearity): SiLU()
+        )
+      )
+    )
+    (conv_norm_out): GroupNorm(32, 32, eps=1e-05, affine=True)
+    (conv_act): SiLU()
+    (conv_out): Conv2d(32, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+) of type <class '__main__.ClassConditionedUnet'> cannot be saved.
+Epoch 1: 100%|██████████| 395/395 [00:08<00:00, 44.93it/s, loss=0.476, lr=0.0001, step=789]
+  0%|          | 0/395 [00:00<?, ?it/s]
+Epoch 2:  54%|█████▍    | 215/395 [00:04<00:03, 47.63it/s, loss=0.529, lr=0.0001, step=1003]

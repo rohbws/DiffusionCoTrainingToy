@@ -1,0 +1,22 @@
+Launching training on one GPU.
+Epoch 0:   0%|          | 0/395 [00:00<?, ?it/s]/tmp/ipykernel_57257/1307585270.py:26: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  act = torch.tensor(act).unsqueeze(1).unsqueeze(-1)  # Convert to tensor and shape (bs, 1, 2, 1)
+/tmp/ipykernel_57257/1307585270.py:30: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  class_cond = torch.tensor(obs)  # Convert to tensor (bs, class_emb_size)
+/tmp/ipykernel_57257/1307585270.py:31: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  t = torch.tensor(t).unsqueeze(-1)  # Convert timestep to tensor (bs, 1)
+Epoch 0: 100%|██████████| 395/395 [00:03<00:00, 125.75it/s, loss=0.94, lr=7.9e-5, step=394]  
+Epoch 1: 100%|██████████| 395/395 [00:03<00:00, 114.90it/s, loss=1.05, lr=0.0001, step=789]
+Epoch 2: 100%|██████████| 395/395 [00:02<00:00, 143.74it/s, loss=1.05, lr=0.0001, step=1184] 
+Epoch 3: 100%|██████████| 395/395 [00:03<00:00, 117.83it/s, loss=0.803, lr=0.0001, step=1579]
+Epoch 4: 100%|██████████| 395/395 [00:02<00:00, 140.06it/s, loss=0.571, lr=0.0001, step=1974]
+Epoch 5: 100%|██████████| 395/395 [00:03<00:00, 122.40it/s, loss=0.648, lr=0.0001, step=2369]
+Epoch 6: 100%|██████████| 395/395 [00:02<00:00, 134.24it/s, loss=0.435, lr=0.0001, step=2764]
+Epoch 7: 100%|██████████| 395/395 [00:03<00:00, 121.90it/s, loss=0.419, lr=0.0001, step=3159]
+Epoch 8: 100%|██████████| 395/395 [00:02<00:00, 137.81it/s, loss=0.274, lr=9.99e-5, step=3554]
+Epoch 9: 100%|██████████| 395/395 [00:03<00:00, 121.03it/s, loss=0.249, lr=9.99e-5, step=3949]
+Epoch 10: 100%|██████████| 395/395 [00:02<00:00, 141.41it/s, loss=0.231, lr=9.99e-5, step=4344]
+Epoch 11: 100%|██████████| 395/395 [00:03<00:00, 116.96it/s, loss=0.281, lr=9.99e-5, step=4739]
+Epoch 12: 100%|██████████| 395/395 [00:02<00:00, 141.00it/s, loss=0.283, lr=9.99e-5, step=5134]
+Epoch 13: 100%|██████████| 395/395 [00:03<00:00, 117.25it/s, loss=0.313, lr=9.98e-5, step=5529]
+Epoch 14:  56%|█████▌    | 220/395 [00:01<00:01, 141.52it/s, loss=0.248, lr=9.98e-5, step=5749]

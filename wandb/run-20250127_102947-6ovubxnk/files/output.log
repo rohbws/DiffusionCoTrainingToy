@@ -1,0 +1,126 @@
+Launching training on one GPU.
+Launching training on one GPU.
+Epoch 0:   0%|          | 0/395 [00:00<?, ?it/s]/tmp/ipykernel_5702/3220645018.py:71: UserWarning: Using a target size (torch.Size([256, 2])) that is different to the input size (torch.Size([2])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  loss = F.mse_loss(noise_pred, noise)
+Epoch 0: 100%|█████████▉| 394/395 [00:05<00:00, 125.51it/s, loss=1.02, lr=7.62e-5, step=393]/tmp/ipykernel_5702/3220645018.py:71: UserWarning: Using a target size (torch.Size([136, 2])) that is different to the input size (torch.Size([2])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  loss = F.mse_loss(noise_pred, noise)
+Epoch 0: 100%|██████████| 395/395 [00:05<00:00, 125.51it/s, loss=1.18, lr=7.64e-5, step=394]/tmp/ipykernel_5702/3220645018.py:102: UserWarning: Using a target size (torch.Size([256, 2])) that is different to the input size (torch.Size([2])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  loss = F.mse_loss(noise_pred, noise)
+/tmp/ipykernel_5702/3220645018.py:102: UserWarning: Using a target size (torch.Size([232, 2])) that is different to the input size (torch.Size([2])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  loss = F.mse_loss(noise_pred, noise)
+self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 0: 100%|██████████| 395/395 [00:05<00:00, 70.65it/s, loss=1.18, lr=7.64e-5, step=394]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                     self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True), loss=0.869, lr=0.0001, step=789] 
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 1: 100%|██████████| 395/395 [00:03<00:00, 117.04it/s, loss=0.869, lr=0.0001, step=789]
+Epoch 2: 100%|██████████| 395/395 [00:02<00:00, 138.97it/s, loss=1.01, lr=0.0001, step=1184]self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 2: 100%|██████████| 395/395 [00:02<00:00, 135.55it/s, loss=1.01, lr=0.0001, step=1184]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                      self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True), loss=1.06, lr=0.0001, step=1579] 
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 3: 100%|██████████| 395/395 [00:03<00:00, 109.86it/s, loss=1.06, lr=0.0001, step=1579]
+Epoch 4: 100%|██████████| 395/395 [00:03<00:00, 126.82it/s, loss=1.07, lr=0.0001, step=1974] self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 4: 100%|██████████| 395/395 [00:03<00:00, 129.62it/s, loss=1.07, lr=0.0001, step=1974]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                     self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True), loss=1.19, lr=0.0001, step=2369] 
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 5: 100%|██████████| 395/395 [00:03<00:00, 110.60it/s, loss=1.19, lr=0.0001, step=2369]
+Epoch 6: 100%|██████████| 395/395 [00:02<00:00, 128.24it/s, loss=0.968, lr=0.0001, step=2764]self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 6: 100%|██████████| 395/395 [00:02<00:00, 133.34it/s, loss=0.968, lr=0.0001, step=2764]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                     self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True), loss=1.05, lr=0.0001, step=3159] 
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 7: 100%|██████████| 395/395 [00:03<00:00, 107.07it/s, loss=1.05, lr=0.0001, step=3159]
+Epoch 8: 100%|██████████| 395/395 [00:03<00:00, 124.42it/s, loss=0.964, lr=9.99e-5, step=3554]self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 8: 100%|██████████| 395/395 [00:03<00:00, 119.95it/s, loss=0.964, lr=9.99e-5, step=3554]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                       self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True), loss=0.856, lr=9.99e-5, step=3949]
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 9: 100%|██████████| 395/395 [00:03<00:00, 112.97it/s, loss=0.856, lr=9.99e-5, step=3949]
+Epoch 10: 100%|██████████| 395/395 [00:02<00:00, 139.69it/s, loss=1.05, lr=9.99e-5, step=4344] self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 10: 100%|██████████| 395/395 [00:02<00:00, 136.44it/s, loss=1.05, lr=9.99e-5, step=4344]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                        self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=1.02, lr=9.99e-5, step=4739] 
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 11: 100%|██████████| 395/395 [00:03<00:00, 109.85it/s, loss=1.02, lr=9.99e-5, step=4739]
+Epoch 12: 100%|██████████| 395/395 [00:02<00:00, 137.95it/s, loss=1.11, lr=9.99e-5, step=5134] self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 12: 100%|██████████| 395/395 [00:02<00:00, 134.85it/s, loss=1.11, lr=9.99e-5, step=5134]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                       self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=0.99, lr=9.98e-5, step=5529] 
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 13: 100%|██████████| 395/395 [00:03<00:00, 111.24it/s, loss=0.99, lr=9.98e-5, step=5529]
+Epoch 14: 100%|██████████| 395/395 [00:03<00:00, 122.75it/s, loss=1.11, lr=9.98e-5, step=5924] self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 14: 100%|██████████| 395/395 [00:03<00:00, 126.55it/s, loss=1.11, lr=9.98e-5, step=5924]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                        self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=0.992, lr=9.98e-5, step=6319]
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 15: 100%|██████████| 395/395 [00:03<00:00, 109.16it/s, loss=0.992, lr=9.98e-5, step=6319]
+Epoch 16: 100%|██████████| 395/395 [00:03<00:00, 131.85it/s, loss=0.845, lr=9.98e-5, step=6714]self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 16: 100%|██████████| 395/395 [00:03<00:00, 121.38it/s, loss=0.845, lr=9.98e-5, step=6714]
+  0%|          | 0/395 [00:00<?, ?it/s]                                                       self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)s, loss=1.01, lr=9.97e-5, step=7109] 
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 17: 100%|██████████| 395/395 [00:03<00:00, 113.66it/s, loss=1.01, lr=9.97e-5, step=7109]
+Epoch 18: 100%|██████████| 395/395 [00:03<00:00, 104.57it/s, loss=1.22, lr=9.97e-5, step=7504]self.unet=MLP(
+  (fc1): Linear(in_features=5, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) of type <class '__main__.MLP'> cannot be saved.
+Epoch 18: 100%|██████████| 395/395 [00:03<00:00, 126.38it/s, loss=1.22, lr=9.97e-5, step=7504]
+  0%|          | 0/395 [00:00<?, ?it/s]
+Epoch 19:  72%|███████▏  | 286/395 [00:14<00:00, 118.68it/s, loss=0.917, lr=9.97e-5, step=7790]

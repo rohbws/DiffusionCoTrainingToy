@@ -1,0 +1,18 @@
+{"time":"2025-01-27T10:29:48.658764423-05:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/home/rbosworth/DiffusionCoTrainingToy/wandb/run-20250127_102947-6ovubxnk/logs/debug-core.log"}
+{"time":"2025-01-27T10:29:48.976824709-05:00","level":"INFO","msg":"created new stream","id":"6ovubxnk"}
+{"time":"2025-01-27T10:29:48.976853924-05:00","level":"INFO","msg":"stream: started","id":"6ovubxnk"}
+{"time":"2025-01-27T10:29:48.981355619-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"6ovubxnk"}
+{"time":"2025-01-27T10:29:48.98147061-05:00","level":"INFO","msg":"handler: started","stream_id":"6ovubxnk"}
+{"time":"2025-01-27T10:29:48.986076088-05:00","level":"INFO","msg":"sender: started","stream_id":"6ovubxnk"}
+{"time":"2025-01-27T10:29:49.139405851-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-27T10:29:49.267868001-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-27T10:30:05.380698643-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-27T10:30:05.741539916-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-27T10:30:55.246351832-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-27T10:30:55.248908528-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-27T10:30:58.713590884-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-27T10:32:06.957026622-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-27T10:32:16.688313514-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-27T10:32:16.696367402-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-27T10:32:20.111228215-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-27T10:32:20.192459103-05:00","level":"INFO","msg":"Pausing system monitor"}

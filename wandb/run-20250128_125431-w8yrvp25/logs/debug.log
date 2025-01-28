@@ -1,0 +1,9 @@
+2025-01-28 12:54:31,850 INFO    MainThread:56272 [wandb_init.py:setup_run_log_directory():624] Logging user logs to /home/rbosworth/DiffusionCoTrainingToy/wandb/run-20250128_125431-w8yrvp25/logs/debug.log
+2025-01-28 12:54:31,850 INFO    MainThread:56272 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to /home/rbosworth/DiffusionCoTrainingToy/wandb/run-20250128_125431-w8yrvp25/logs/debug-internal.log
+2025-01-28 12:54:31,850 INFO    MainThread:56272 [wandb_init.py:init():743] calling init triggers
+2025-01-28 12:54:31,850 INFO    MainThread:56272 [wandb_init.py:init():748] wandb.init called with sweep_config: {}
+config: {}
+2025-01-28 12:54:31,850 INFO    MainThread:56272 [wandb_init.py:init():768] wandb.init() called when a run is still active
+2025-01-28 12:54:31,851 INFO    MainThread:56272 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-28 12:54:31,851 INFO    MainThread:56272 [wandb_init.py:_pause_backend():541] pausing backend
+2025-01-28 12:54:35,138 INFO    MainThread:56272 [wandb_init.py:_resume_backend():546] resuming backend
