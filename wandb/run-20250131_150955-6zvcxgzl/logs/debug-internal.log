@@ -1,0 +1,10 @@
+{"time":"2025-01-31T15:09:55.877036388-05:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/home/rbosworth/DiffusionCoTrainingToy/wandb/run-20250131_150955-6zvcxgzl/logs/debug-core.log"}
+{"time":"2025-01-31T15:09:55.988010489-05:00","level":"INFO","msg":"created new stream","id":"6zvcxgzl"}
+{"time":"2025-01-31T15:09:55.988057012-05:00","level":"INFO","msg":"stream: started","id":"6zvcxgzl"}
+{"time":"2025-01-31T15:09:55.988082458-05:00","level":"INFO","msg":"handler: started","stream_id":"6zvcxgzl"}
+{"time":"2025-01-31T15:09:55.988125637-05:00","level":"INFO","msg":"sender: started","stream_id":"6zvcxgzl"}
+{"time":"2025-01-31T15:09:55.98810135-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"6zvcxgzl"}
+{"time":"2025-01-31T15:09:56.161944335-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-31T15:09:56.271811351-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-31T15:09:58.132508035-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-31T15:10:02.056797574-05:00","level":"INFO","msg":"Pausing system monitor"}

@@ -1,0 +1,29 @@
+Launching training on one GPU.
+Epoch 0:   0%|          | 0/395 [00:00<?, ?it/s]/tmp/ipykernel_58487/975330632.py:41: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  act = torch.tensor(act).unsqueeze(1).unsqueeze(-1)  # Convert to tensor and shape (bs, 1, 2, 1)
+/tmp/ipykernel_58487/975330632.py:45: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  class_cond = torch.tensor(obs)  # Convert to tensor (bs, class_emb_size)
+/tmp/ipykernel_58487/975330632.py:48: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  t = torch.tensor(t).unsqueeze(-1)  # Convert timestep to tensor (bs, 1)
+ClassConditionedMLP(
+  (time_embedding): TimeEmbedding()
+  (mlp): Sequential(
+    (0): Linear(in_features=132, out_features=64, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=64, out_features=64, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=64, out_features=64, bias=True)
+    (5): ReLU()
+    (6): Linear(in_features=64, out_features=2, bias=True)
+  )
+)
+Input shape: torch.Size([5])
+Number of weights: 16962
+Launching training on one GPU.
+                                                /tmp/ipykernel_58487/651375884.py:41: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  act = torch.tensor(act).unsqueeze(1).unsqueeze(-1)  # Convert to tensor and shape (bs, 1, 2, 1)
+/tmp/ipykernel_58487/651375884.py:45: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  class_cond = torch.tensor(obs)  # Convert to tensor (bs, class_emb_size)
+/tmp/ipykernel_58487/651375884.py:48: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  t = torch.tensor(t).unsqueeze(-1)  # Convert timestep to tensor (bs, 1)
+cuda:0

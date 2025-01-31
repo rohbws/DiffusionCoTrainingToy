@@ -1,0 +1,24 @@
+{"time":"2025-01-31T15:04:28.333570052-05:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/home/rbosworth/DiffusionCoTrainingToy/wandb/run-20250131_150428-a0n3a9k4/logs/debug-core.log"}
+{"time":"2025-01-31T15:04:28.439483179-05:00","level":"INFO","msg":"created new stream","id":"a0n3a9k4"}
+{"time":"2025-01-31T15:04:28.439508771-05:00","level":"INFO","msg":"stream: started","id":"a0n3a9k4"}
+{"time":"2025-01-31T15:04:28.439524518-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"a0n3a9k4"}
+{"time":"2025-01-31T15:04:28.439554615-05:00","level":"INFO","msg":"sender: started","stream_id":"a0n3a9k4"}
+{"time":"2025-01-31T15:04:28.439600501-05:00","level":"INFO","msg":"handler: started","stream_id":"a0n3a9k4"}
+{"time":"2025-01-31T15:04:28.657841432-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-31T15:04:28.763791178-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-31T15:04:39.994881875-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-31T15:04:40.035738479-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-31T15:04:50.357274999-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-31T15:04:50.665595154-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-31T15:07:23.443016422-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-31T15:07:23.483763913-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-31T15:07:24.602651853-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-31T15:07:24.608747264-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-31T15:07:24.849594545-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-31T15:07:24.853603108-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-31T15:07:26.659593296-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-31T15:07:26.666628097-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-31T15:07:29.356146682-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-31T15:07:29.399967109-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-31T15:07:37.870449911-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-31T15:07:38.01388443-05:00","level":"INFO","msg":"Pausing system monitor"}
