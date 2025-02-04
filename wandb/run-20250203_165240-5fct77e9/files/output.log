@@ -1,0 +1,428 @@
+Launching training on one GPU.
+Epoch 0:   0%|          | 0/395 [00:00<?, ?it/s]/tmp/ipykernel_240792/2719386989.py:41: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  act = torch.tensor(act).unsqueeze(1).unsqueeze(-1)  # Convert to tensor and shape (bs, 1, 2, 1)
+/tmp/ipykernel_240792/2719386989.py:45: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  class_cond = torch.tensor(obs)  # Convert to tensor (bs, class_emb_size)
+/tmp/ipykernel_240792/2719386989.py:48: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  t = torch.tensor(t).unsqueeze(-1)  # Convert timestep to tensor (bs, 1)
+Epoch 0: 100%|██████████| 395/395 [00:02<00:00, 149.63it/s, lr=7.9e-5, step=395, train-loss=0.901, val-loss=0.901]
+Epoch 1: 100%|██████████| 395/395 [00:02<00:00, 173.27it/s, lr=0.0001, step=790, train-loss=0.537, val-loss=0.537]
+Epoch 2: 100%|██████████| 395/395 [00:02<00:00, 175.50it/s, lr=0.0001, step=1185, train-loss=0.463, val-loss=0.463]
+Epoch 3: 100%|██████████| 395/395 [00:02<00:00, 165.81it/s, lr=0.0001, step=1580, train-loss=0.425, val-loss=0.425]
+Epoch 4: 100%|██████████| 395/395 [00:02<00:00, 180.21it/s, lr=0.0001, step=1975, train-loss=0.484, val-loss=0.484]
+Epoch 5: 100%|██████████| 395/395 [00:02<00:00, 175.56it/s, lr=0.0001, step=2370, train-loss=0.509, val-loss=0.509]
+Epoch 6: 100%|██████████| 395/395 [00:02<00:00, 166.85it/s, lr=0.0001, step=2765, train-loss=0.4, val-loss=0.4]509]
+Epoch 7: 100%|██████████| 395/395 [00:02<00:00, 171.90it/s, lr=0.0001, step=3160, train-loss=0.344, val-loss=0.344]
+Epoch 8: 100%|██████████| 395/395 [00:02<00:00, 174.96it/s, lr=9.99e-5, step=3555, train-loss=0.409, val-loss=0.409]
+Epoch 9: 100%|██████████| 395/395 [00:02<00:00, 171.67it/s, lr=9.99e-5, step=3950, train-loss=0.357, val-loss=0.357]
+Epoch 10: 100%|██████████| 395/395 [00:02<00:00, 165.67it/s, lr=9.99e-5, step=4345, train-loss=0.423, val-loss=0.423]
+Epoch 11: 100%|██████████| 395/395 [00:02<00:00, 174.72it/s, lr=9.99e-5, step=4740, train-loss=0.463, val-loss=0.463]
+Epoch 12: 100%|██████████| 395/395 [00:02<00:00, 171.50it/s, lr=9.99e-5, step=5135, train-loss=0.35, val-loss=0.35]3]
+Epoch 13: 100%|██████████| 395/395 [00:02<00:00, 165.17it/s, lr=9.98e-5, step=5530, train-loss=0.352, val-loss=0.352]
+Epoch 14: 100%|██████████| 395/395 [00:02<00:00, 176.95it/s, lr=9.98e-5, step=5925, train-loss=0.349, val-loss=0.349]
+Epoch 15: 100%|██████████| 395/395 [00:02<00:00, 172.25it/s, lr=9.98e-5, step=6320, train-loss=0.35, val-loss=0.35]
+Epoch 16: 100%|██████████| 395/395 [00:02<00:00, 163.86it/s, lr=9.98e-5, step=6715, train-loss=0.279, val-loss=0.279]
+Epoch 17: 100%|██████████| 395/395 [00:02<00:00, 160.66it/s, lr=9.97e-5, step=7110, train-loss=0.348, val-loss=0.348]
+Epoch 18: 100%|██████████| 395/395 [00:02<00:00, 178.43it/s, lr=9.97e-5, step=7505, train-loss=0.313, val-loss=0.313]
+Epoch 19: 100%|██████████| 395/395 [00:02<00:00, 174.85it/s, lr=9.97e-5, step=7900, train-loss=0.322, val-loss=0.322]
+Epoch 20: 100%|██████████| 395/395 [00:02<00:00, 163.23it/s, lr=9.96e-5, step=8295, train-loss=0.31, val-loss=0.31]2]
+Epoch 21: 100%|██████████| 395/395 [00:02<00:00, 173.24it/s, lr=9.96e-5, step=8690, train-loss=0.283, val-loss=0.283]
+Epoch 22: 100%|██████████| 395/395 [00:02<00:00, 174.06it/s, lr=9.95e-5, step=9085, train-loss=0.377, val-loss=0.377]
+Epoch 23: 100%|██████████| 395/395 [00:02<00:00, 160.25it/s, lr=9.95e-5, step=9480, train-loss=0.294, val-loss=0.294]
+Epoch 24: 100%|██████████| 395/395 [00:02<00:00, 177.46it/s, lr=9.94e-5, step=9875, train-loss=0.272, val-loss=0.272]
+Epoch 25: 100%|██████████| 395/395 [00:02<00:00, 170.21it/s, lr=9.94e-5, step=10270, train-loss=0.372, val-loss=0.372]
+Epoch 26: 100%|██████████| 395/395 [00:02<00:00, 165.57it/s, lr=9.93e-5, step=10665, train-loss=0.403, val-loss=0.403]
+Epoch 27: 100%|██████████| 395/395 [00:02<00:00, 172.36it/s, lr=9.93e-5, step=11060, train-loss=0.45, val-loss=0.45]
+Epoch 28: 100%|██████████| 395/395 [00:02<00:00, 165.99it/s, lr=9.92e-5, step=11455, train-loss=0.325, val-loss=0.325]
+Epoch 29: 100%|██████████| 395/395 [00:02<00:00, 167.60it/s, lr=9.92e-5, step=11850, train-loss=0.481, val-loss=0.481]
+Epoch 30: 100%|██████████| 395/395 [00:02<00:00, 158.56it/s, lr=9.91e-5, step=12245, train-loss=0.347, val-loss=0.347]
+Epoch 31: 100%|██████████| 395/395 [00:02<00:00, 171.17it/s, lr=9.91e-5, step=12640, train-loss=0.4, val-loss=0.4]
+Epoch 32: 100%|██████████| 395/395 [00:02<00:00, 171.96it/s, lr=9.9e-5, step=13035, train-loss=0.411, val-loss=0.411]
+Epoch 33: 100%|██████████| 395/395 [00:02<00:00, 150.60it/s, lr=9.89e-5, step=13430, train-loss=0.334, val-loss=0.334]
+Epoch 34: 100%|██████████| 395/395 [00:02<00:00, 172.13it/s, lr=9.89e-5, step=13825, train-loss=0.455, val-loss=0.455]
+Epoch 35: 100%|██████████| 395/395 [00:02<00:00, 175.49it/s, lr=9.88e-5, step=14220, train-loss=0.351, val-loss=0.351]
+Epoch 36: 100%|██████████| 395/395 [00:02<00:00, 158.96it/s, lr=9.87e-5, step=14615, train-loss=0.357, val-loss=0.357]
+Epoch 37: 100%|██████████| 395/395 [00:02<00:00, 168.51it/s, lr=9.87e-5, step=15010, train-loss=0.392, val-loss=0.392]
+Epoch 38: 100%|██████████| 395/395 [00:02<00:00, 174.42it/s, lr=9.86e-5, step=15405, train-loss=0.378, val-loss=0.378]
+Epoch 39: 100%|██████████| 395/395 [00:02<00:00, 174.42it/s, lr=9.85e-5, step=15800, train-loss=0.375, val-loss=0.375]
+Epoch 40: 100%|██████████| 395/395 [00:02<00:00, 169.23it/s, lr=9.84e-5, step=16195, train-loss=0.329, val-loss=0.329]
+Epoch 41: 100%|██████████| 395/395 [00:02<00:00, 175.07it/s, lr=9.84e-5, step=16590, train-loss=0.345, val-loss=0.345]
+Epoch 42: 100%|██████████| 395/395 [00:02<00:00, 177.84it/s, lr=9.83e-5, step=16985, train-loss=0.394, val-loss=0.394]
+Epoch 43: 100%|██████████| 395/395 [00:02<00:00, 163.69it/s, lr=9.82e-5, step=17380, train-loss=0.353, val-loss=0.353]
+Epoch 44: 100%|██████████| 395/395 [00:02<00:00, 172.58it/s, lr=9.81e-5, step=17775, train-loss=0.289, val-loss=0.289]
+Epoch 45: 100%|██████████| 395/395 [00:02<00:00, 167.86it/s, lr=9.8e-5, step=18170, train-loss=0.401, val-loss=0.401]
+Epoch 46: 100%|██████████| 395/395 [00:02<00:00, 166.45it/s, lr=9.79e-5, step=18565, train-loss=0.293, val-loss=0.293]
+Epoch 47: 100%|██████████| 395/395 [00:02<00:00, 178.48it/s, lr=9.78e-5, step=18960, train-loss=0.346, val-loss=0.346]
+Epoch 48: 100%|██████████| 395/395 [00:02<00:00, 178.29it/s, lr=9.78e-5, step=19355, train-loss=0.385, val-loss=0.385]
+Epoch 49: 100%|██████████| 395/395 [00:02<00:00, 172.51it/s, lr=9.77e-5, step=19750, train-loss=0.338, val-loss=0.338]
+Epoch 50: 100%|██████████| 395/395 [00:02<00:00, 164.98it/s, lr=9.76e-5, step=20145, train-loss=0.382, val-loss=0.382]
+Epoch 51: 100%|██████████| 395/395 [00:02<00:00, 169.86it/s, lr=9.75e-5, step=20540, train-loss=0.3, val-loss=0.3]
+Epoch 52: 100%|██████████| 395/395 [00:02<00:00, 173.53it/s, lr=9.74e-5, step=20935, train-loss=0.489, val-loss=0.489]
+Epoch 53: 100%|██████████| 395/395 [00:02<00:00, 164.07it/s, lr=9.73e-5, step=21330, train-loss=0.336, val-loss=0.336]
+Epoch 54: 100%|██████████| 395/395 [00:02<00:00, 168.77it/s, lr=9.72e-5, step=21725, train-loss=0.326, val-loss=0.326]
+Epoch 55: 100%|██████████| 395/395 [00:02<00:00, 164.42it/s, lr=9.71e-5, step=22120, train-loss=0.271, val-loss=0.271]
+Epoch 56: 100%|██████████| 395/395 [00:02<00:00, 155.10it/s, lr=9.7e-5, step=22515, train-loss=0.35, val-loss=0.35]71]
+Epoch 57: 100%|██████████| 395/395 [00:02<00:00, 159.92it/s, lr=9.68e-5, step=22910, train-loss=0.303, val-loss=0.303]
+Epoch 58: 100%|██████████| 395/395 [00:02<00:00, 160.71it/s, lr=9.67e-5, step=23305, train-loss=0.317, val-loss=0.317]
+Epoch 59: 100%|██████████| 395/395 [00:02<00:00, 152.05it/s, lr=9.66e-5, step=23700, train-loss=0.279, val-loss=0.279]
+Epoch 60: 100%|██████████| 395/395 [00:02<00:00, 162.70it/s, lr=9.65e-5, step=24095, train-loss=0.312, val-loss=0.312]
+Epoch 61: 100%|██████████| 395/395 [00:02<00:00, 177.63it/s, lr=9.64e-5, step=24490, train-loss=0.28, val-loss=0.28]
+Epoch 62: 100%|██████████| 395/395 [00:02<00:00, 175.04it/s, lr=9.63e-5, step=24885, train-loss=0.39, val-loss=0.39]
+Epoch 63: 100%|██████████| 395/395 [00:02<00:00, 158.54it/s, lr=9.61e-5, step=25280, train-loss=0.383, val-loss=0.383]
+Epoch 64: 100%|██████████| 395/395 [00:02<00:00, 175.02it/s, lr=9.6e-5, step=25675, train-loss=0.323, val-loss=0.323]]
+Epoch 65: 100%|██████████| 395/395 [00:02<00:00, 174.32it/s, lr=9.59e-5, step=26070, train-loss=0.342, val-loss=0.342]
+Epoch 66: 100%|██████████| 395/395 [00:02<00:00, 167.81it/s, lr=9.58e-5, step=26465, train-loss=0.423, val-loss=0.423]
+Epoch 67: 100%|██████████| 395/395 [00:02<00:00, 172.13it/s, lr=9.56e-5, step=26860, train-loss=0.269, val-loss=0.269]
+Epoch 68: 100%|██████████| 395/395 [00:02<00:00, 179.39it/s, lr=9.55e-5, step=27255, train-loss=0.323, val-loss=0.323]
+Epoch 69: 100%|██████████| 395/395 [00:02<00:00, 166.10it/s, lr=9.54e-5, step=27650, train-loss=0.397, val-loss=0.397]
+Epoch 70: 100%|██████████| 395/395 [00:02<00:00, 176.70it/s, lr=9.53e-5, step=28045, train-loss=0.317, val-loss=0.317]
+Epoch 71: 100%|██████████| 395/395 [00:02<00:00, 177.21it/s, lr=9.51e-5, step=28440, train-loss=0.332, val-loss=0.332]
+Epoch 72: 100%|██████████| 395/395 [00:02<00:00, 179.96it/s, lr=9.5e-5, step=28835, train-loss=0.382, val-loss=0.382]]
+Epoch 73: 100%|██████████| 395/395 [00:02<00:00, 155.01it/s, lr=9.48e-5, step=29230, train-loss=0.272, val-loss=0.272]
+Epoch 74: 100%|██████████| 395/395 [00:02<00:00, 172.82it/s, lr=9.47e-5, step=29625, train-loss=0.401, val-loss=0.401]
+Epoch 75: 100%|██████████| 395/395 [00:02<00:00, 161.32it/s, lr=9.46e-5, step=3e+4, train-loss=0.306, val-loss=0.306]
+Epoch 76: 100%|██████████| 395/395 [00:02<00:00, 151.65it/s, lr=9.44e-5, step=30415, train-loss=0.322, val-loss=0.322]
+Epoch 77: 100%|██████████| 395/395 [00:02<00:00, 171.15it/s, lr=9.43e-5, step=30810, train-loss=0.328, val-loss=0.328]
+Epoch 78: 100%|██████████| 395/395 [00:02<00:00, 180.22it/s, lr=9.41e-5, step=31205, train-loss=0.332, val-loss=0.332]
+Epoch 79: 100%|██████████| 395/395 [00:02<00:00, 165.11it/s, lr=9.4e-5, step=31600, train-loss=0.461, val-loss=0.461]
+Epoch 80: 100%|██████████| 395/395 [00:02<00:00, 167.38it/s, lr=9.38e-5, step=31995, train-loss=0.397, val-loss=0.397]
+Epoch 81: 100%|██████████| 395/395 [00:02<00:00, 175.85it/s, lr=9.37e-5, step=32390, train-loss=0.405, val-loss=0.405]
+Epoch 82: 100%|██████████| 395/395 [00:02<00:00, 173.93it/s, lr=9.35e-5, step=32785, train-loss=0.306, val-loss=0.306]
+Epoch 83: 100%|██████████| 395/395 [00:02<00:00, 154.91it/s, lr=9.34e-5, step=33180, train-loss=0.356, val-loss=0.356]
+Epoch 84: 100%|██████████| 395/395 [00:02<00:00, 164.89it/s, lr=9.32e-5, step=33575, train-loss=0.377, val-loss=0.377]
+Epoch 85: 100%|██████████| 395/395 [00:02<00:00, 155.08it/s, lr=9.3e-5, step=33970, train-loss=0.265, val-loss=0.265]
+Epoch 86: 100%|██████████| 395/395 [00:02<00:00, 146.09it/s, lr=9.29e-5, step=34365, train-loss=0.261, val-loss=0.261]
+Epoch 87: 100%|██████████| 395/395 [00:02<00:00, 161.29it/s, lr=9.27e-5, step=34760, train-loss=0.336, val-loss=0.336]
+Epoch 88: 100%|██████████| 395/395 [00:02<00:00, 175.48it/s, lr=9.26e-5, step=35155, train-loss=0.342, val-loss=0.342]
+Epoch 89: 100%|██████████| 395/395 [00:02<00:00, 160.60it/s, lr=9.24e-5, step=35550, train-loss=0.266, val-loss=0.266]
+Epoch 90: 100%|██████████| 395/395 [00:02<00:00, 179.99it/s, lr=9.22e-5, step=35945, train-loss=0.275, val-loss=0.275]
+Epoch 91: 100%|██████████| 395/395 [00:02<00:00, 177.35it/s, lr=9.21e-5, step=36340, train-loss=0.422, val-loss=0.422]
+Epoch 92: 100%|██████████| 395/395 [00:02<00:00, 177.27it/s, lr=9.19e-5, step=36735, train-loss=0.357, val-loss=0.357]
+Epoch 93: 100%|██████████| 395/395 [00:02<00:00, 162.10it/s, lr=9.17e-5, step=37130, train-loss=0.346, val-loss=0.346]
+Epoch 94: 100%|██████████| 395/395 [00:02<00:00, 173.39it/s, lr=9.15e-5, step=37525, train-loss=0.276, val-loss=0.276]
+Epoch 95: 100%|██████████| 395/395 [00:02<00:00, 168.21it/s, lr=9.14e-5, step=37920, train-loss=0.312, val-loss=0.312]
+Epoch 96: 100%|██████████| 395/395 [00:02<00:00, 164.36it/s, lr=9.12e-5, step=38315, train-loss=0.391, val-loss=0.391]
+Epoch 97: 100%|██████████| 395/395 [00:02<00:00, 164.41it/s, lr=9.1e-5, step=38710, train-loss=0.337, val-loss=0.337]
+Epoch 98: 100%|██████████| 395/395 [00:02<00:00, 168.18it/s, lr=9.08e-5, step=39105, train-loss=0.472, val-loss=0.472]
+Epoch 99: 100%|██████████| 395/395 [00:02<00:00, 150.01it/s, lr=9.06e-5, step=39500, train-loss=0.371, val-loss=0.371]
+Epoch 100: 100%|██████████| 395/395 [00:02<00:00, 166.61it/s, lr=9.05e-5, step=39895, train-loss=0.302, val-loss=0.302]
+Epoch 101: 100%|██████████| 395/395 [00:02<00:00, 150.65it/s, lr=9.03e-5, step=40290, train-loss=0.418, val-loss=0.418]
+Epoch 102: 100%|██████████| 395/395 [00:02<00:00, 161.59it/s, lr=9.01e-5, step=40685, train-loss=0.33, val-loss=0.33]8]
+Epoch 103: 100%|██████████| 395/395 [00:02<00:00, 158.23it/s, lr=8.99e-5, step=41080, train-loss=0.32, val-loss=0.32]
+Epoch 104: 100%|██████████| 395/395 [00:02<00:00, 180.92it/s, lr=8.97e-5, step=41475, train-loss=0.421, val-loss=0.421]
+Epoch 105: 100%|██████████| 395/395 [00:02<00:00, 180.44it/s, lr=8.95e-5, step=41870, train-loss=0.301, val-loss=0.301]
+Epoch 106: 100%|██████████| 395/395 [00:02<00:00, 164.83it/s, lr=8.93e-5, step=42265, train-loss=0.362, val-loss=0.362]
+Epoch 107: 100%|██████████| 395/395 [00:02<00:00, 174.11it/s, lr=8.91e-5, step=42660, train-loss=0.3, val-loss=0.3]
+Epoch 108: 100%|██████████| 395/395 [00:02<00:00, 176.26it/s, lr=8.89e-5, step=43055, train-loss=0.374, val-loss=0.374]
+Epoch 109: 100%|██████████| 395/395 [00:02<00:00, 158.59it/s, lr=8.87e-5, step=43450, train-loss=0.18, val-loss=0.18]
+Epoch 110: 100%|██████████| 395/395 [00:02<00:00, 171.77it/s, lr=8.85e-5, step=43845, train-loss=0.431, val-loss=0.431]
+Epoch 111: 100%|██████████| 395/395 [00:02<00:00, 170.37it/s, lr=8.83e-5, step=44240, train-loss=0.334, val-loss=0.334]
+Epoch 112: 100%|██████████| 395/395 [00:02<00:00, 167.77it/s, lr=8.81e-5, step=44635, train-loss=0.309, val-loss=0.309]
+Epoch 113: 100%|██████████| 395/395 [00:02<00:00, 162.28it/s, lr=8.79e-5, step=45030, train-loss=0.286, val-loss=0.286]
+Epoch 114: 100%|██████████| 395/395 [00:02<00:00, 180.44it/s, lr=8.77e-5, step=45425, train-loss=0.424, val-loss=0.424]
+Epoch 115: 100%|██████████| 395/395 [00:02<00:00, 169.49it/s, lr=8.75e-5, step=45820, train-loss=0.235, val-loss=0.235]
+Epoch 116: 100%|██████████| 395/395 [00:02<00:00, 158.83it/s, lr=8.73e-5, step=46215, train-loss=0.261, val-loss=0.261]
+Epoch 117: 100%|██████████| 395/395 [00:02<00:00, 165.34it/s, lr=8.71e-5, step=46610, train-loss=0.229, val-loss=0.229]
+Epoch 118: 100%|██████████| 395/395 [00:02<00:00, 175.67it/s, lr=8.69e-5, step=47005, train-loss=0.361, val-loss=0.361]
+Epoch 119: 100%|██████████| 395/395 [00:02<00:00, 161.76it/s, lr=8.67e-5, step=47400, train-loss=0.339, val-loss=0.339]
+Epoch 120: 100%|██████████| 395/395 [00:02<00:00, 175.71it/s, lr=8.64e-5, step=47795, train-loss=0.267, val-loss=0.267]
+Epoch 121: 100%|██████████| 395/395 [00:02<00:00, 169.51it/s, lr=8.62e-5, step=48190, train-loss=0.348, val-loss=0.348]
+Epoch 122: 100%|██████████| 395/395 [00:02<00:00, 176.99it/s, lr=8.6e-5, step=48585, train-loss=0.265, val-loss=0.265]]
+Epoch 123: 100%|██████████| 395/395 [00:02<00:00, 166.44it/s, lr=8.58e-5, step=48980, train-loss=0.334, val-loss=0.334]
+Epoch 124: 100%|██████████| 395/395 [00:02<00:00, 175.10it/s, lr=8.56e-5, step=49375, train-loss=0.318, val-loss=0.318]
+Epoch 125: 100%|██████████| 395/395 [00:02<00:00, 173.74it/s, lr=8.53e-5, step=49770, train-loss=0.407, val-loss=0.407]
+Epoch 126: 100%|██████████| 395/395 [00:02<00:00, 163.69it/s, lr=8.51e-5, step=50165, train-loss=0.269, val-loss=0.269]
+Epoch 127: 100%|██████████| 395/395 [00:02<00:00, 169.44it/s, lr=8.49e-5, step=50560, train-loss=0.188, val-loss=0.188]
+Epoch 128: 100%|██████████| 395/395 [00:02<00:00, 177.07it/s, lr=8.47e-5, step=50955, train-loss=0.335, val-loss=0.335]
+Epoch 129: 100%|██████████| 395/395 [00:02<00:00, 163.96it/s, lr=8.44e-5, step=51350, train-loss=0.219, val-loss=0.219]
+Epoch 130: 100%|██████████| 395/395 [00:02<00:00, 180.92it/s, lr=8.42e-5, step=51745, train-loss=0.45, val-loss=0.45]9]
+Epoch 131: 100%|██████████| 395/395 [00:02<00:00, 170.52it/s, lr=8.4e-5, step=52140, train-loss=0.421, val-loss=0.421]
+Epoch 132: 100%|██████████| 395/395 [00:02<00:00, 178.76it/s, lr=8.38e-5, step=52535, train-loss=0.457, val-loss=0.457]
+Epoch 133: 100%|██████████| 395/395 [00:02<00:00, 158.36it/s, lr=8.35e-5, step=52930, train-loss=0.299, val-loss=0.299]
+Epoch 134: 100%|██████████| 395/395 [00:02<00:00, 177.84it/s, lr=8.33e-5, step=53325, train-loss=0.208, val-loss=0.208]
+Epoch 135: 100%|██████████| 395/395 [00:02<00:00, 171.21it/s, lr=8.3e-5, step=53720, train-loss=0.335, val-loss=0.335]
+Epoch 136: 100%|██████████| 395/395 [00:02<00:00, 163.61it/s, lr=8.28e-5, step=54115, train-loss=0.428, val-loss=0.428]
+Epoch 137: 100%|██████████| 395/395 [00:02<00:00, 162.57it/s, lr=8.26e-5, step=54510, train-loss=0.3, val-loss=0.3]
+Epoch 138: 100%|██████████| 395/395 [00:02<00:00, 162.85it/s, lr=8.23e-5, step=54905, train-loss=0.204, val-loss=0.204]
+Epoch 139: 100%|██████████| 395/395 [00:02<00:00, 148.36it/s, lr=8.21e-5, step=55300, train-loss=0.304, val-loss=0.304]
+Epoch 140: 100%|██████████| 395/395 [00:02<00:00, 161.98it/s, lr=8.18e-5, step=55695, train-loss=0.261, val-loss=0.261]
+Epoch 141: 100%|██████████| 395/395 [00:02<00:00, 151.94it/s, lr=8.16e-5, step=56090, train-loss=0.298, val-loss=0.298]
+Epoch 142: 100%|██████████| 395/395 [00:02<00:00, 159.07it/s, lr=8.14e-5, step=56485, train-loss=0.443, val-loss=0.443]
+Epoch 143: 100%|██████████| 395/395 [00:02<00:00, 162.93it/s, lr=8.11e-5, step=56880, train-loss=0.265, val-loss=0.265]
+Epoch 144: 100%|██████████| 395/395 [00:02<00:00, 173.59it/s, lr=8.09e-5, step=57275, train-loss=0.273, val-loss=0.273]
+Epoch 145: 100%|██████████| 395/395 [00:02<00:00, 170.52it/s, lr=8.06e-5, step=57670, train-loss=0.286, val-loss=0.286]
+Epoch 146: 100%|██████████| 395/395 [00:02<00:00, 159.87it/s, lr=8.04e-5, step=58065, train-loss=0.256, val-loss=0.256]
+Epoch 147: 100%|██████████| 395/395 [00:02<00:00, 162.21it/s, lr=8.01e-5, step=58460, train-loss=0.314, val-loss=0.314]
+Epoch 148: 100%|██████████| 395/395 [00:02<00:00, 169.98it/s, lr=7.99e-5, step=58855, train-loss=0.454, val-loss=0.454]
+Epoch 149: 100%|██████████| 395/395 [00:02<00:00, 160.02it/s, lr=7.96e-5, step=59250, train-loss=0.349, val-loss=0.349]
+Epoch 150: 100%|██████████| 395/395 [00:02<00:00, 179.15it/s, lr=7.94e-5, step=59645, train-loss=0.333, val-loss=0.333]
+Epoch 151: 100%|██████████| 395/395 [00:02<00:00, 174.26it/s, lr=7.91e-5, step=6e+4, train-loss=0.322, val-loss=0.322]
+Epoch 152: 100%|██████████| 395/395 [00:02<00:00, 176.95it/s, lr=7.88e-5, step=60435, train-loss=0.334, val-loss=0.334]
+Epoch 153: 100%|██████████| 395/395 [00:02<00:00, 164.15it/s, lr=7.86e-5, step=60830, train-loss=0.258, val-loss=0.258]
+Epoch 154: 100%|██████████| 395/395 [00:02<00:00, 178.56it/s, lr=7.83e-5, step=61225, train-loss=0.306, val-loss=0.306]
+Epoch 155: 100%|██████████| 395/395 [00:02<00:00, 176.67it/s, lr=7.81e-5, step=61620, train-loss=0.318, val-loss=0.318]
+Epoch 156: 100%|██████████| 395/395 [00:02<00:00, 167.39it/s, lr=7.78e-5, step=62015, train-loss=0.346, val-loss=0.346]
+Epoch 157: 100%|██████████| 395/395 [00:02<00:00, 177.16it/s, lr=7.75e-5, step=62410, train-loss=0.219, val-loss=0.219]
+Epoch 158: 100%|██████████| 395/395 [00:02<00:00, 181.37it/s, lr=7.73e-5, step=62805, train-loss=0.238, val-loss=0.238]
+Epoch 159: 100%|██████████| 395/395 [00:02<00:00, 162.58it/s, lr=7.7e-5, step=63200, train-loss=0.316, val-loss=0.316]
+Epoch 160: 100%|██████████| 395/395 [00:02<00:00, 177.59it/s, lr=7.68e-5, step=63595, train-loss=0.32, val-loss=0.32]]
+Epoch 161: 100%|██████████| 395/395 [00:02<00:00, 175.88it/s, lr=7.65e-5, step=63990, train-loss=0.385, val-loss=0.385]
+Epoch 162: 100%|██████████| 395/395 [00:02<00:00, 167.00it/s, lr=7.62e-5, step=64385, train-loss=0.341, val-loss=0.341]
+Epoch 163: 100%|██████████| 395/395 [00:02<00:00, 178.15it/s, lr=7.6e-5, step=64780, train-loss=0.388, val-loss=0.388]
+Epoch 164: 100%|██████████| 395/395 [00:02<00:00, 177.64it/s, lr=7.57e-5, step=65175, train-loss=0.242, val-loss=0.242]
+Epoch 165: 100%|██████████| 395/395 [00:02<00:00, 176.08it/s, lr=7.54e-5, step=65570, train-loss=0.365, val-loss=0.365]
+Epoch 166: 100%|██████████| 395/395 [00:02<00:00, 168.44it/s, lr=7.51e-5, step=65965, train-loss=0.327, val-loss=0.327]
+Epoch 167: 100%|██████████| 395/395 [00:02<00:00, 176.64it/s, lr=7.49e-5, step=66360, train-loss=0.3, val-loss=0.3]
+Epoch 168: 100%|██████████| 395/395 [00:02<00:00, 178.58it/s, lr=7.46e-5, step=66755, train-loss=0.458, val-loss=0.458]
+Epoch 169: 100%|██████████| 395/395 [00:02<00:00, 162.77it/s, lr=7.43e-5, step=67150, train-loss=0.29, val-loss=0.29]
+Epoch 170: 100%|██████████| 395/395 [00:02<00:00, 180.69it/s, lr=7.4e-5, step=67545, train-loss=0.429, val-loss=0.429]
+Epoch 171: 100%|██████████| 395/395 [00:02<00:00, 177.64it/s, lr=7.38e-5, step=67940, train-loss=0.466, val-loss=0.466]
+Epoch 172: 100%|██████████| 395/395 [00:02<00:00, 167.87it/s, lr=7.35e-5, step=68335, train-loss=0.42, val-loss=0.42]6]
+Epoch 173: 100%|██████████| 395/395 [00:02<00:00, 176.52it/s, lr=7.32e-5, step=68730, train-loss=0.405, val-loss=0.405]
+Epoch 174: 100%|██████████| 395/395 [00:02<00:00, 177.21it/s, lr=7.29e-5, step=69125, train-loss=0.239, val-loss=0.239]
+Epoch 175: 100%|██████████| 395/395 [00:02<00:00, 173.90it/s, lr=7.26e-5, step=69520, train-loss=0.493, val-loss=0.493]
+Epoch 176: 100%|██████████| 395/395 [00:02<00:00, 170.06it/s, lr=7.24e-5, step=69915, train-loss=0.376, val-loss=0.376]
+Epoch 177: 100%|██████████| 395/395 [00:02<00:00, 176.17it/s, lr=7.21e-5, step=70310, train-loss=0.381, val-loss=0.381]
+Epoch 178: 100%|██████████| 395/395 [00:02<00:00, 179.32it/s, lr=7.18e-5, step=70705, train-loss=0.272, val-loss=0.272]
+Epoch 179: 100%|██████████| 395/395 [00:02<00:00, 165.69it/s, lr=7.15e-5, step=71100, train-loss=0.307, val-loss=0.307]
+Epoch 180: 100%|██████████| 395/395 [00:02<00:00, 177.92it/s, lr=7.12e-5, step=71495, train-loss=0.421, val-loss=0.421]
+Epoch 181: 100%|██████████| 395/395 [00:02<00:00, 174.20it/s, lr=7.09e-5, step=71890, train-loss=0.354, val-loss=0.354]
+Epoch 182: 100%|██████████| 395/395 [00:02<00:00, 167.36it/s, lr=7.07e-5, step=72285, train-loss=0.472, val-loss=0.472]
+Epoch 183: 100%|██████████| 395/395 [00:02<00:00, 171.71it/s, lr=7.04e-5, step=72680, train-loss=0.314, val-loss=0.314]
+Epoch 184: 100%|██████████| 395/395 [00:02<00:00, 179.22it/s, lr=7.01e-5, step=73075, train-loss=0.322, val-loss=0.322]
+Epoch 185: 100%|██████████| 395/395 [00:02<00:00, 175.14it/s, lr=6.98e-5, step=73470, train-loss=0.262, val-loss=0.262]
+Epoch 186: 100%|██████████| 395/395 [00:02<00:00, 166.85it/s, lr=6.95e-5, step=73865, train-loss=0.41, val-loss=0.41]2]
+Epoch 187: 100%|██████████| 395/395 [00:02<00:00, 180.24it/s, lr=6.92e-5, step=74260, train-loss=0.349, val-loss=0.349]
+Epoch 188: 100%|██████████| 395/395 [00:02<00:00, 174.13it/s, lr=6.89e-5, step=74655, train-loss=0.434, val-loss=0.434]
+Epoch 189: 100%|██████████| 395/395 [00:02<00:00, 165.38it/s, lr=6.86e-5, step=75050, train-loss=0.36, val-loss=0.36]
+Epoch 190: 100%|██████████| 395/395 [00:02<00:00, 180.22it/s, lr=6.83e-5, step=75445, train-loss=0.39, val-loss=0.39]
+Epoch 191: 100%|██████████| 395/395 [00:02<00:00, 175.99it/s, lr=6.8e-5, step=75840, train-loss=0.478, val-loss=0.478]
+Epoch 192: 100%|██████████| 395/395 [00:02<00:00, 166.86it/s, lr=6.78e-5, step=76235, train-loss=0.365, val-loss=0.365]
+Epoch 193: 100%|██████████| 395/395 [00:02<00:00, 177.24it/s, lr=6.75e-5, step=76630, train-loss=0.301, val-loss=0.301]
+Epoch 194: 100%|██████████| 395/395 [00:02<00:00, 180.70it/s, lr=6.72e-5, step=77025, train-loss=0.408, val-loss=0.408]
+Epoch 195: 100%|██████████| 395/395 [00:02<00:00, 175.76it/s, lr=6.69e-5, step=77420, train-loss=0.526, val-loss=0.526]
+Epoch 196: 100%|██████████| 395/395 [00:02<00:00, 169.26it/s, lr=6.66e-5, step=77815, train-loss=0.312, val-loss=0.312]
+Epoch 197: 100%|██████████| 395/395 [00:02<00:00, 176.25it/s, lr=6.63e-5, step=78210, train-loss=0.387, val-loss=0.387]
+Epoch 198: 100%|██████████| 395/395 [00:02<00:00, 181.34it/s, lr=6.6e-5, step=78605, train-loss=0.355, val-loss=0.355]]
+Epoch 199: 100%|██████████| 395/395 [00:02<00:00, 163.30it/s, lr=6.57e-5, step=79000, train-loss=0.401, val-loss=0.401]
+Epoch 200: 100%|██████████| 395/395 [00:02<00:00, 179.12it/s, lr=6.54e-5, step=79395, train-loss=0.242, val-loss=0.242]
+Epoch 201: 100%|██████████| 395/395 [00:02<00:00, 178.36it/s, lr=6.51e-5, step=79790, train-loss=0.282, val-loss=0.282]
+Epoch 202: 100%|██████████| 395/395 [00:02<00:00, 167.63it/s, lr=6.48e-5, step=80185, train-loss=0.377, val-loss=0.377]
+Epoch 203: 100%|██████████| 395/395 [00:02<00:00, 171.16it/s, lr=6.45e-5, step=80580, train-loss=0.428, val-loss=0.428]
+Epoch 204: 100%|██████████| 395/395 [00:02<00:00, 181.24it/s, lr=6.42e-5, step=80975, train-loss=0.322, val-loss=0.322]
+Epoch 205: 100%|██████████| 395/395 [00:02<00:00, 176.99it/s, lr=6.39e-5, step=81370, train-loss=0.352, val-loss=0.352]
+Epoch 206: 100%|██████████| 395/395 [00:02<00:00, 169.30it/s, lr=6.36e-5, step=81765, train-loss=0.312, val-loss=0.312]
+Epoch 207: 100%|██████████| 395/395 [00:02<00:00, 176.42it/s, lr=6.33e-5, step=82160, train-loss=0.266, val-loss=0.266]
+Epoch 208: 100%|██████████| 395/395 [00:02<00:00, 180.80it/s, lr=6.3e-5, step=82555, train-loss=0.275, val-loss=0.275]]
+Epoch 209: 100%|██████████| 395/395 [00:02<00:00, 160.63it/s, lr=6.27e-5, step=82950, train-loss=0.343, val-loss=0.343]
+Epoch 210: 100%|██████████| 395/395 [00:02<00:00, 180.88it/s, lr=6.24e-5, step=83345, train-loss=0.327, val-loss=0.327]
+Epoch 211: 100%|██████████| 395/395 [00:02<00:00, 174.18it/s, lr=6.2e-5, step=83740, train-loss=0.351, val-loss=0.351]
+Epoch 212: 100%|██████████| 395/395 [00:02<00:00, 167.12it/s, lr=6.17e-5, step=84135, train-loss=0.259, val-loss=0.259]
+Epoch 213: 100%|██████████| 395/395 [00:02<00:00, 177.30it/s, lr=6.14e-5, step=84530, train-loss=0.349, val-loss=0.349]
+Epoch 214: 100%|██████████| 395/395 [00:02<00:00, 178.16it/s, lr=6.11e-5, step=84925, train-loss=0.186, val-loss=0.186]
+Epoch 215: 100%|██████████| 395/395 [00:02<00:00, 175.62it/s, lr=6.08e-5, step=85320, train-loss=0.27, val-loss=0.27]
+Epoch 216: 100%|██████████| 395/395 [00:02<00:00, 167.98it/s, lr=6.05e-5, step=85715, train-loss=0.268, val-loss=0.268]
+Epoch 217: 100%|██████████| 395/395 [00:02<00:00, 175.48it/s, lr=6.02e-5, step=86110, train-loss=0.26, val-loss=0.26]
+Epoch 218: 100%|██████████| 395/395 [00:02<00:00, 179.78it/s, lr=5.99e-5, step=86505, train-loss=0.253, val-loss=0.253]
+Epoch 219: 100%|██████████| 395/395 [00:02<00:00, 165.57it/s, lr=5.96e-5, step=86900, train-loss=0.281, val-loss=0.281]
+Epoch 220: 100%|██████████| 395/395 [00:02<00:00, 174.42it/s, lr=5.93e-5, step=87295, train-loss=0.378, val-loss=0.378]
+Epoch 221: 100%|██████████| 395/395 [00:02<00:00, 176.41it/s, lr=5.9e-5, step=87690, train-loss=0.273, val-loss=0.273]
+Epoch 222: 100%|██████████| 395/395 [00:02<00:00, 169.05it/s, lr=5.87e-5, step=88085, train-loss=0.255, val-loss=0.255]
+Epoch 223: 100%|██████████| 395/395 [00:02<00:00, 176.06it/s, lr=5.83e-5, step=88480, train-loss=0.27, val-loss=0.27]
+Epoch 224: 100%|██████████| 395/395 [00:02<00:00, 178.86it/s, lr=5.8e-5, step=88875, train-loss=0.274, val-loss=0.274]
+Epoch 225: 100%|██████████| 395/395 [00:02<00:00, 176.98it/s, lr=5.77e-5, step=89270, train-loss=0.396, val-loss=0.396]
+Epoch 226: 100%|██████████| 395/395 [00:02<00:00, 169.57it/s, lr=5.74e-5, step=89665, train-loss=0.306, val-loss=0.306]
+Epoch 227: 100%|██████████| 395/395 [00:02<00:00, 176.22it/s, lr=5.71e-5, step=90060, train-loss=0.327, val-loss=0.327]
+Epoch 228: 100%|██████████| 395/395 [00:02<00:00, 181.47it/s, lr=5.68e-5, step=90455, train-loss=0.337, val-loss=0.337]
+Epoch 229: 100%|██████████| 395/395 [00:02<00:00, 167.21it/s, lr=5.65e-5, step=90850, train-loss=0.246, val-loss=0.246]
+Epoch 230: 100%|██████████| 395/395 [00:02<00:00, 181.07it/s, lr=5.62e-5, step=91245, train-loss=0.308, val-loss=0.308]
+Epoch 231: 100%|██████████| 395/395 [00:02<00:00, 171.69it/s, lr=5.59e-5, step=91640, train-loss=0.433, val-loss=0.433]
+Epoch 232: 100%|██████████| 395/395 [00:02<00:00, 165.85it/s, lr=5.55e-5, step=92035, train-loss=0.306, val-loss=0.306]
+Epoch 233: 100%|██████████| 395/395 [00:02<00:00, 174.04it/s, lr=5.52e-5, step=92430, train-loss=0.374, val-loss=0.374]
+Epoch 234: 100%|██████████| 395/395 [00:02<00:00, 179.13it/s, lr=5.49e-5, step=92825, train-loss=0.24, val-loss=0.24]4]
+Epoch 235: 100%|██████████| 395/395 [00:02<00:00, 174.18it/s, lr=5.46e-5, step=93220, train-loss=0.33, val-loss=0.33]
+Epoch 236: 100%|██████████| 395/395 [00:02<00:00, 168.27it/s, lr=5.43e-5, step=93615, train-loss=0.431, val-loss=0.431]
+Epoch 237: 100%|██████████| 395/395 [00:02<00:00, 175.24it/s, lr=5.4e-5, step=94010, train-loss=0.356, val-loss=0.356]
+Epoch 238: 100%|██████████| 395/395 [00:02<00:00, 179.73it/s, lr=5.37e-5, step=94405, train-loss=0.395, val-loss=0.395]
+Epoch 239: 100%|██████████| 395/395 [00:02<00:00, 165.25it/s, lr=5.33e-5, step=94800, train-loss=0.267, val-loss=0.267]
+Epoch 240: 100%|██████████| 395/395 [00:02<00:00, 176.20it/s, lr=5.3e-5, step=95195, train-loss=0.345, val-loss=0.345]]
+Epoch 241: 100%|██████████| 395/395 [00:02<00:00, 177.66it/s, lr=5.27e-5, step=95590, train-loss=0.202, val-loss=0.202]
+Epoch 242: 100%|██████████| 395/395 [00:02<00:00, 165.50it/s, lr=5.24e-5, step=95985, train-loss=0.198, val-loss=0.198]
+Epoch 243: 100%|██████████| 395/395 [00:02<00:00, 175.28it/s, lr=5.21e-5, step=96380, train-loss=0.265, val-loss=0.265]
+Epoch 244: 100%|██████████| 395/395 [00:02<00:00, 179.82it/s, lr=5.18e-5, step=96775, train-loss=0.306, val-loss=0.306]
+Epoch 245: 100%|██████████| 395/395 [00:02<00:00, 177.99it/s, lr=5.15e-5, step=97170, train-loss=0.35, val-loss=0.35]
+Epoch 246: 100%|██████████| 395/395 [00:02<00:00, 166.65it/s, lr=5.11e-5, step=97565, train-loss=0.326, val-loss=0.326]
+Epoch 247: 100%|██████████| 395/395 [00:02<00:00, 178.19it/s, lr=5.08e-5, step=97960, train-loss=0.31, val-loss=0.31]
+Epoch 248: 100%|██████████| 395/395 [00:02<00:00, 182.12it/s, lr=5.05e-5, step=98355, train-loss=0.255, val-loss=0.255]
+Epoch 249: 100%|██████████| 395/395 [00:02<00:00, 159.02it/s, lr=5.02e-5, step=98750, train-loss=0.286, val-loss=0.286]
+Epoch 250: 100%|██████████| 395/395 [00:02<00:00, 175.26it/s, lr=4.99e-5, step=99145, train-loss=0.325, val-loss=0.325]
+Epoch 251: 100%|██████████| 395/395 [00:02<00:00, 175.27it/s, lr=4.96e-5, step=99540, train-loss=0.416, val-loss=0.416]
+Epoch 252: 100%|██████████| 395/395 [00:02<00:00, 165.87it/s, lr=4.93e-5, step=99935, train-loss=0.231, val-loss=0.231]
+Epoch 253: 100%|██████████| 395/395 [00:02<00:00, 172.67it/s, lr=4.89e-5, step=1e+5, train-loss=0.263, val-loss=0.263]
+Epoch 254: 100%|██████████| 395/395 [00:02<00:00, 178.75it/s, lr=4.86e-5, step=100725, train-loss=0.349, val-loss=0.349]
+Epoch 255: 100%|██████████| 395/395 [00:02<00:00, 174.35it/s, lr=4.83e-5, step=101120, train-loss=0.277, val-loss=0.277]
+Epoch 256: 100%|██████████| 395/395 [00:02<00:00, 168.64it/s, lr=4.8e-5, step=101515, train-loss=0.36, val-loss=0.36]77]
+Epoch 257: 100%|██████████| 395/395 [00:02<00:00, 177.28it/s, lr=4.77e-5, step=101910, train-loss=0.42, val-loss=0.42]
+Epoch 258: 100%|██████████| 395/395 [00:02<00:00, 179.00it/s, lr=4.74e-5, step=102305, train-loss=0.359, val-loss=0.359]
+Epoch 259: 100%|██████████| 395/395 [00:02<00:00, 162.75it/s, lr=4.71e-5, step=102700, train-loss=0.259, val-loss=0.259]
+Epoch 260: 100%|██████████| 395/395 [00:02<00:00, 179.42it/s, lr=4.67e-5, step=103095, train-loss=0.238, val-loss=0.238]
+Epoch 261: 100%|██████████| 395/395 [00:02<00:00, 178.56it/s, lr=4.64e-5, step=103490, train-loss=0.312, val-loss=0.312]
+Epoch 262: 100%|██████████| 395/395 [00:02<00:00, 167.54it/s, lr=4.61e-5, step=103885, train-loss=0.221, val-loss=0.221]
+Epoch 263: 100%|██████████| 395/395 [00:02<00:00, 169.15it/s, lr=4.58e-5, step=104280, train-loss=0.291, val-loss=0.291]
+Epoch 264: 100%|██████████| 395/395 [00:02<00:00, 171.15it/s, lr=4.55e-5, step=104675, train-loss=0.361, val-loss=0.361]
+Epoch 265: 100%|██████████| 395/395 [00:02<00:00, 165.82it/s, lr=4.52e-5, step=105070, train-loss=0.341, val-loss=0.341]
+Epoch 266: 100%|██████████| 395/395 [00:02<00:00, 177.52it/s, lr=4.49e-5, step=105465, train-loss=0.266, val-loss=0.266]
+Epoch 267: 100%|██████████| 395/395 [00:02<00:00, 172.21it/s, lr=4.45e-5, step=105860, train-loss=0.456, val-loss=0.456]
+Epoch 268: 100%|██████████| 395/395 [00:02<00:00, 175.18it/s, lr=4.42e-5, step=106255, train-loss=0.345, val-loss=0.345]
+Epoch 269: 100%|██████████| 395/395 [00:02<00:00, 164.08it/s, lr=4.39e-5, step=106650, train-loss=0.289, val-loss=0.289]
+Epoch 270: 100%|██████████| 395/395 [00:02<00:00, 169.30it/s, lr=4.36e-5, step=107045, train-loss=0.364, val-loss=0.364]
+Epoch 271: 100%|██████████| 395/395 [00:02<00:00, 148.64it/s, lr=4.33e-5, step=107440, train-loss=0.296, val-loss=0.296]
+Epoch 272: 100%|██████████| 395/395 [00:02<00:00, 134.62it/s, lr=4.3e-5, step=107835, train-loss=0.252, val-loss=0.252]]
+Epoch 273: 100%|██████████| 395/395 [00:02<00:00, 151.26it/s, lr=4.27e-5, step=108230, train-loss=0.345, val-loss=0.345]
+Epoch 274: 100%|██████████| 395/395 [00:02<00:00, 174.07it/s, lr=4.24e-5, step=108625, train-loss=0.339, val-loss=0.339]
+Epoch 275: 100%|██████████| 395/395 [00:02<00:00, 158.52it/s, lr=4.2e-5, step=109020, train-loss=0.363, val-loss=0.363]
+Epoch 276: 100%|██████████| 395/395 [00:02<00:00, 163.96it/s, lr=4.17e-5, step=109415, train-loss=0.315, val-loss=0.315]
+Epoch 277: 100%|██████████| 395/395 [00:02<00:00, 165.57it/s, lr=4.14e-5, step=109810, train-loss=0.293, val-loss=0.293]
+Epoch 278: 100%|██████████| 395/395 [00:02<00:00, 175.19it/s, lr=4.11e-5, step=110205, train-loss=0.306, val-loss=0.306]
+Epoch 279: 100%|██████████| 395/395 [00:02<00:00, 158.86it/s, lr=4.08e-5, step=110600, train-loss=0.324, val-loss=0.324]
+Epoch 280: 100%|██████████| 395/395 [00:02<00:00, 173.86it/s, lr=4.05e-5, step=110995, train-loss=0.336, val-loss=0.336]
+Epoch 281: 100%|██████████| 395/395 [00:02<00:00, 168.34it/s, lr=4.02e-5, step=111390, train-loss=0.237, val-loss=0.237]
+Epoch 282: 100%|██████████| 395/395 [00:02<00:00, 161.38it/s, lr=3.99e-5, step=111785, train-loss=0.364, val-loss=0.364]
+Epoch 283: 100%|██████████| 395/395 [00:02<00:00, 170.98it/s, lr=3.96e-5, step=112180, train-loss=0.27, val-loss=0.27]
+Epoch 284: 100%|██████████| 395/395 [00:02<00:00, 176.48it/s, lr=3.93e-5, step=112575, train-loss=0.48, val-loss=0.48]
+Epoch 285: 100%|██████████| 395/395 [00:02<00:00, 154.84it/s, lr=3.9e-5, step=112970, train-loss=0.342, val-loss=0.342]
+Epoch 286: 100%|██████████| 395/395 [00:02<00:00, 175.72it/s, lr=3.86e-5, step=113365, train-loss=0.33, val-loss=0.33]]
+Epoch 287: 100%|██████████| 395/395 [00:02<00:00, 173.03it/s, lr=3.83e-5, step=113760, train-loss=0.357, val-loss=0.357]
+Epoch 288: 100%|██████████| 395/395 [00:02<00:00, 173.82it/s, lr=3.8e-5, step=114155, train-loss=0.336, val-loss=0.336]]
+Epoch 289: 100%|██████████| 395/395 [00:02<00:00, 153.48it/s, lr=3.77e-5, step=114550, train-loss=0.366, val-loss=0.366]
+Epoch 290: 100%|██████████| 395/395 [00:02<00:00, 177.40it/s, lr=3.74e-5, step=114945, train-loss=0.281, val-loss=0.281]
+Epoch 291: 100%|██████████| 395/395 [00:02<00:00, 180.36it/s, lr=3.71e-5, step=115340, train-loss=0.316, val-loss=0.316]
+Epoch 292: 100%|██████████| 395/395 [00:02<00:00, 165.93it/s, lr=3.68e-5, step=115735, train-loss=0.4, val-loss=0.4]316]
+Epoch 293: 100%|██████████| 395/395 [00:02<00:00, 171.71it/s, lr=3.65e-5, step=116130, train-loss=0.35, val-loss=0.35]
+Epoch 294: 100%|██████████| 395/395 [00:02<00:00, 174.28it/s, lr=3.62e-5, step=116525, train-loss=0.291, val-loss=0.291]
+Epoch 295: 100%|██████████| 395/395 [00:02<00:00, 164.18it/s, lr=3.59e-5, step=116920, train-loss=0.315, val-loss=0.315]
+Epoch 296: 100%|██████████| 395/395 [00:02<00:00, 174.49it/s, lr=3.56e-5, step=117315, train-loss=0.245, val-loss=0.245]
+Epoch 297: 100%|██████████| 395/395 [00:02<00:00, 172.60it/s, lr=3.53e-5, step=117710, train-loss=0.404, val-loss=0.404]
+Epoch 298: 100%|██████████| 395/395 [00:02<00:00, 173.23it/s, lr=3.5e-5, step=118105, train-loss=0.347, val-loss=0.347]]
+Epoch 299: 100%|██████████| 395/395 [00:02<00:00, 161.33it/s, lr=3.47e-5, step=118500, train-loss=0.271, val-loss=0.271]
+Epoch 300: 100%|██████████| 395/395 [00:02<00:00, 178.20it/s, lr=3.44e-5, step=118895, train-loss=0.342, val-loss=0.342]
+Epoch 301: 100%|██████████| 395/395 [00:02<00:00, 177.26it/s, lr=3.41e-5, step=119290, train-loss=0.299, val-loss=0.299]
+Epoch 302: 100%|██████████| 395/395 [00:02<00:00, 169.08it/s, lr=3.38e-5, step=119685, train-loss=0.295, val-loss=0.295]
+Epoch 303: 100%|██████████| 395/395 [00:02<00:00, 177.77it/s, lr=3.35e-5, step=120080, train-loss=0.329, val-loss=0.329]
+Epoch 304: 100%|██████████| 395/395 [00:02<00:00, 181.46it/s, lr=3.32e-5, step=120475, train-loss=0.251, val-loss=0.251]
+Epoch 305: 100%|██████████| 395/395 [00:02<00:00, 163.78it/s, lr=3.29e-5, step=120870, train-loss=0.34, val-loss=0.34]
+Epoch 306: 100%|██████████| 395/395 [00:02<00:00, 173.66it/s, lr=3.26e-5, step=121265, train-loss=0.297, val-loss=0.297]
+Epoch 307: 100%|██████████| 395/395 [00:02<00:00, 166.96it/s, lr=3.23e-5, step=121660, train-loss=0.352, val-loss=0.352]
+Epoch 308: 100%|██████████| 395/395 [00:02<00:00, 178.32it/s, lr=3.2e-5, step=122055, train-loss=0.399, val-loss=0.399]]
+Epoch 309: 100%|██████████| 395/395 [00:02<00:00, 165.62it/s, lr=3.17e-5, step=122450, train-loss=0.321, val-loss=0.321]
+/tmp/ipykernel_240792/3597398218.py:2: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+Early stopping at epoch 309
+  model = torch.load(f"saved_models/MLP-model-{config.model_id}.pth").to(device)
+/tmp/ipykernel_240792/69440190.py:2: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model = torch.load(f"saved_models/MLP-model-{config.model_id}.pth").to(device)
+/tmp/ipykernel_240792/2719386989.py:41: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  act = torch.tensor(act).unsqueeze(1).unsqueeze(-1)  # Convert to tensor and shape (bs, 1, 2, 1)
+/tmp/ipykernel_240792/2719386989.py:45: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  class_cond = torch.tensor(obs)  # Convert to tensor (bs, class_emb_size)
+/tmp/ipykernel_240792/2719386989.py:48: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  t = torch.tensor(t).unsqueeze(-1)  # Convert timestep to tensor (bs, 1)
+/tmp/ipykernel_240792/1509830298.py:2: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model = torch.load(f"saved_models/MLP-model-{config.model_id}.pth")
+/tmp/ipykernel_240792/2719386989.py:41: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  act = torch.tensor(act).unsqueeze(1).unsqueeze(-1)  # Convert to tensor and shape (bs, 1, 2, 1)
+/tmp/ipykernel_240792/2719386989.py:45: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  class_cond = torch.tensor(obs)  # Convert to tensor (bs, class_emb_size)
+/tmp/ipykernel_240792/2719386989.py:48: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  t = torch.tensor(t).unsqueeze(-1)  # Convert timestep to tensor (bs, 1)
+/tmp/ipykernel_240792/3597398218.py:2: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model = torch.load(f"saved_models/MLP-model-{config.model_id}.pth").to(device)
+/tmp/ipykernel_240792/925831619.py:2: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model = torch.load(f"saved_models/MLP-model-{config.model_id}.pth").to(device)
+/tmp/ipykernel_240792/2719386989.py:41: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  act = torch.tensor(act).unsqueeze(1).unsqueeze(-1)  # Convert to tensor and shape (bs, 1, 2, 1)
+/tmp/ipykernel_240792/2719386989.py:45: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  class_cond = torch.tensor(obs)  # Convert to tensor (bs, class_emb_size)
+/tmp/ipykernel_240792/2719386989.py:48: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  t = torch.tensor(t).unsqueeze(-1)  # Convert timestep to tensor (bs, 1)
+0.3357944041490555
+/tmp/ipykernel_240792/925831619.py:2: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model = torch.load(f"saved_models/MLP-model-{config.model_id}.pth").to(device)
+/tmp/ipykernel_240792/2719386989.py:41: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  act = torch.tensor(act).unsqueeze(1).unsqueeze(-1)  # Convert to tensor and shape (bs, 1, 2, 1)
+/tmp/ipykernel_240792/2719386989.py:45: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  class_cond = torch.tensor(obs)  # Convert to tensor (bs, class_emb_size)
+/tmp/ipykernel_240792/2719386989.py:48: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  t = torch.tensor(t).unsqueeze(-1)  # Convert timestep to tensor (bs, 1)
+0.31695456802845
+/tmp/ipykernel_240792/925831619.py:2: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model = torch.load(f"saved_models/MLP-model-{config.model_id}.pth").to(device)
+/tmp/ipykernel_240792/2719386989.py:41: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  act = torch.tensor(act).unsqueeze(1).unsqueeze(-1)  # Convert to tensor and shape (bs, 1, 2, 1)
+/tmp/ipykernel_240792/2719386989.py:45: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  class_cond = torch.tensor(obs)  # Convert to tensor (bs, class_emb_size)
+/tmp/ipykernel_240792/2719386989.py:48: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  t = torch.tensor(t).unsqueeze(-1)  # Convert timestep to tensor (bs, 1)
+0.3167298659682274
+/tmp/ipykernel_240792/925831619.py:2: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model = torch.load(f"saved_models/MLP-model-{config.model_id}.pth").to(device)
+/tmp/ipykernel_240792/2719386989.py:41: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  act = torch.tensor(act).unsqueeze(1).unsqueeze(-1)  # Convert to tensor and shape (bs, 1, 2, 1)
+/tmp/ipykernel_240792/2719386989.py:45: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  class_cond = torch.tensor(obs)  # Convert to tensor (bs, class_emb_size)
+/tmp/ipykernel_240792/2719386989.py:48: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  t = torch.tensor(t).unsqueeze(-1)  # Convert timestep to tensor (bs, 1)
+0.3521435931324959
+/tmp/ipykernel_240792/925831619.py:2: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model = torch.load(f"saved_models/MLP-model-{config.model_id}.pth").to(device)
+/tmp/ipykernel_240792/2719386989.py:41: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  act = torch.tensor(act).unsqueeze(1).unsqueeze(-1)  # Convert to tensor and shape (bs, 1, 2, 1)
+/tmp/ipykernel_240792/2719386989.py:45: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  class_cond = torch.tensor(obs)  # Convert to tensor (bs, class_emb_size)
+/tmp/ipykernel_240792/2719386989.py:48: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  t = torch.tensor(t).unsqueeze(-1)  # Convert timestep to tensor (bs, 1)
+0.3269882947206497
+/tmp/ipykernel_240792/925831619.py:2: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model = torch.load(f"saved_models/MLP-model-{config.model_id}.pth").to(device)
+/tmp/ipykernel_240792/2719386989.py:41: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  act = torch.tensor(act).unsqueeze(1).unsqueeze(-1)  # Convert to tensor and shape (bs, 1, 2, 1)
+/tmp/ipykernel_240792/2719386989.py:45: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  class_cond = torch.tensor(obs)  # Convert to tensor (bs, class_emb_size)
+/tmp/ipykernel_240792/2719386989.py:48: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  t = torch.tensor(t).unsqueeze(-1)  # Convert timestep to tensor (bs, 1)
+0.34590306133031845
+/tmp/ipykernel_240792/925831619.py:2: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model = torch.load(f"saved_models/MLP-model-{config.model_id}.pth").to(device)
+/tmp/ipykernel_240792/2719386989.py:41: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  act = torch.tensor(act).unsqueeze(1).unsqueeze(-1)  # Convert to tensor and shape (bs, 1, 2, 1)
+/tmp/ipykernel_240792/2719386989.py:45: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  class_cond = torch.tensor(obs)  # Convert to tensor (bs, class_emb_size)
+/tmp/ipykernel_240792/2719386989.py:48: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  t = torch.tensor(t).unsqueeze(-1)  # Convert timestep to tensor (bs, 1)
+0.3824088126420975
+/tmp/ipykernel_240792/925831619.py:2: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model = torch.load(f"saved_models/MLP-model-{config.model_id}.pth").to(device)
+/tmp/ipykernel_240792/2719386989.py:41: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  act = torch.tensor(act).unsqueeze(1).unsqueeze(-1)  # Convert to tensor and shape (bs, 1, 2, 1)
+/tmp/ipykernel_240792/2719386989.py:45: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  class_cond = torch.tensor(obs)  # Convert to tensor (bs, class_emb_size)
+/tmp/ipykernel_240792/2719386989.py:48: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  t = torch.tensor(t).unsqueeze(-1)  # Convert timestep to tensor (bs, 1)
+0.3344908133149147
+/tmp/ipykernel_240792/925831619.py:2: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model = torch.load(f"saved_models/MLP-model-{config.model_id}.pth").to(device)
+/tmp/ipykernel_240792/2719386989.py:41: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  act = torch.tensor(act).unsqueeze(1).unsqueeze(-1)  # Convert to tensor and shape (bs, 1, 2, 1)
+/tmp/ipykernel_240792/2719386989.py:45: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  class_cond = torch.tensor(obs)  # Convert to tensor (bs, class_emb_size)
+/tmp/ipykernel_240792/2719386989.py:48: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  t = torch.tensor(t).unsqueeze(-1)  # Convert timestep to tensor (bs, 1)
+0.3163236230611801
+/tmp/ipykernel_240792/925831619.py:2: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model = torch.load(f"saved_models/MLP-model-{config.model_id}.pth").to(device)
+/tmp/ipykernel_240792/2719386989.py:41: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  act = torch.tensor(act).unsqueeze(1).unsqueeze(-1)  # Convert to tensor and shape (bs, 1, 2, 1)
+/tmp/ipykernel_240792/2719386989.py:45: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  class_cond = torch.tensor(obs)  # Convert to tensor (bs, class_emb_size)
+/tmp/ipykernel_240792/2719386989.py:48: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  t = torch.tensor(t).unsqueeze(-1)  # Convert timestep to tensor (bs, 1)
+0.32613711059093475

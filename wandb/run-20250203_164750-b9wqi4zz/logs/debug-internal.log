@@ -1,0 +1,8 @@
+{"time":"2025-02-03T16:47:51.213338501-05:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/home/rbosworth/DiffusionCoTrainingToy/wandb/run-20250203_164750-b9wqi4zz/logs/debug-core.log"}
+{"time":"2025-02-03T16:47:51.3185165-05:00","level":"INFO","msg":"created new stream","id":"b9wqi4zz"}
+{"time":"2025-02-03T16:47:51.318542613-05:00","level":"INFO","msg":"stream: started","id":"b9wqi4zz"}
+{"time":"2025-02-03T16:47:51.318574591-05:00","level":"INFO","msg":"handler: started","stream_id":"b9wqi4zz"}
+{"time":"2025-02-03T16:47:51.318586667-05:00","level":"INFO","msg":"sender: started","stream_id":"b9wqi4zz"}
+{"time":"2025-02-03T16:47:51.318592085-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"b9wqi4zz"}
+{"time":"2025-02-03T16:47:51.482625813-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-03T16:47:51.599868398-05:00","level":"INFO","msg":"Pausing system monitor"}

@@ -1,0 +1,48 @@
+{
+  "os": "Linux-5.15.0-125-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.10.12",
+  "startedAt": "2025-02-03T21:47:51.210112Z",
+  "program": "/home/rbosworth/DiffusionCoTrainingToy/toy_exp.ipynb",
+  "codePath": "toy_exp.ipynb",
+  "git": {
+    "remote": "git@github.com:rohbws/DiffusionCoTrainingToy.git",
+    "commit": "bba7230bdf7f98d5b3965366d8de6cb70abe60d7"
+  },
+  "email": "rohanb27@mit.edu",
+  "root": "/home/rbosworth/DiffusionCoTrainingToy",
+  "host": "kuka-upper",
+  "executable": "/home/rbosworth/DiffusionCoTrainingToy/diffusion_toy/bin/python",
+  "codePathLocal": "toy_exp.ipynb",
+  "cpu_count": 10,
+  "cpu_count_logical": 20,
+  "gpu": "NVIDIA GeForce RTX 2080 Ti",
+  "gpu_count": 2,
+  "disk": {
+    "/": {
+      "total": "1889087803392",
+      "used": "1556517957632"
+    }
+  },
+  "memory": {
+    "total": "67073110016"
+  },
+  "cpu": {
+    "count": 10,
+    "countLogical": 20
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 2080 Ti",
+      "memoryTotal": "11811160064",
+      "cudaCores": 4352,
+      "architecture": "Turing"
+    },
+    {
+      "name": "NVIDIA GeForce RTX 2080 Ti",
+      "memoryTotal": "11811160064",
+      "cudaCores": 4352,
+      "architecture": "Turing"
+    }
+  ],
+  "cudaVersion": "12.2"
+}
